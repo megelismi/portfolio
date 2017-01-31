@@ -51,7 +51,7 @@ body {
 	background-size: cover;
 	color: black;
 	background-color: #e7f6fb;
-	height: 635px;
+	height: 670px;
 
 }
 
@@ -68,7 +68,7 @@ body {
 
 .page-menu {
 	background-color: #e0f3f9;
-	height: 635px;
+	height: 670px;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
