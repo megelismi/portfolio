@@ -3,7 +3,7 @@
 }
 
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Playfair Display', serif;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
@@ -31,7 +31,7 @@ body {
 }
 
 .nav-list li {
-/*	display: inline;*/
+	
 	padding-left: 20px;
 }
 
@@ -43,6 +43,7 @@ body {
 .nav-list a:hover {
 	color: gray;
 }
+
 .container {
 	height: auto;
 
@@ -55,7 +56,7 @@ body {
 	background-size: cover;
 	color: black;
 	background-color: #e7f6fb;
-	height: 250px;
+	height: 350px;
 }
 
 .introduction h1, h2{
@@ -78,19 +79,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
 }
 
 .profile-photo {
   width: 150px;
   border-radius: 2px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .page-menu {
-	text-align: center;
 	background-color: #e0f3f9;
-	height: 250px;
+	height: 350px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -101,11 +102,13 @@ body {
 }
 
 .about-me-text {
-  margin-top: 20px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+	width: 80%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	font-size: 13px;
+	padding: 30px;
 }
 
 .about-me-text p {
@@ -142,39 +145,16 @@ h3 {
   filter: grayscale(100%);
 }
 
-/*.about-me-pic-and-text {
-  margin-left: 20px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-
-}*/
-
-.page-menu {
-	text-align: center;
-
-}
-.page-menu, .about-me-pic-and-text {
-	flex-basis: 0;
-	flex-grow: 1;
-
-}
-
-.about-me-text {
-  margin-left: 20px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-}
 
 .about-me-text p {
   font-size: 100%;
   margin-top: 0;
 }
 
-
-
+/*.name {
+	font-family: 'Satisfy', cursive;
+	font-size: 18px;
+}*/
 #yaarn-pic {
 	width: 250px;
 }
