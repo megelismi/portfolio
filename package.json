@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "./node_modules/node-sass/bin/node-sass --output-style compressed -o build styles -w styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/megelismi/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/megelismi/portfolio/issues"
+  },
+  "homepage": "https://github.com/megelismi/portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.0"
+  },
+  "dependencies": {
+    "leaflet": "^1.0.0-rc.2",
+    "react-leaflet": "^1.0.0-rc.3"
+  }
+}
