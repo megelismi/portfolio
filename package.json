@@ -1,27 +1,25 @@
 {
-  "name": "portfolio",
+  "name": "new-portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "./node_modules/node-sass/bin/node-sass --output-style compressed -o build styles -w styles"
+  "scripts": {  
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css", 
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/megelismi/portfolio.git"
+    "url": "git+https://github.com/megelismi/portfoliov2.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/megelismi/portfolio/issues"
+    "url": "https://github.com/megelismi/portfoliov2/issues"
   },
-  "homepage": "https://github.com/megelismi/portfolio#readme",
+  "homepage": "https://github.com/megelismi/portfoliov2#readme",
   "devDependencies": {
-    "node-sass": "^4.5.0"
-  },
-  "dependencies": {
-    "leaflet": "^1.0.0-rc.2",
-    "react-leaflet": "^1.0.0-rc.3"
+    "node-sass": "^4.5.0",
+    "nodemon": "^1.11.0"
   }
 }
