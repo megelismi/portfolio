@@ -1,3 +1,45 @@
+.introduction-container {
+  position: relative;
+  background-color: #011627;
+  height: 100vh; }
+  .introduction-container h1 {
+    font-family: "amethystregular";
+    color: #fffffa; }
+  .introduction-container h2, .introduction-container ul {
+    color: #2ec4b6;
+    font-family: 'Martel Sans', sans-serif;
+    text-align: center;
+    margin: 0; }
+  .introduction-container h2 {
+    font-size: 14px;
+    padding: 40px 0 20px 0; }
+  .introduction-container ul {
+    list-style: none;
+    background-color: white;
+    padding-left: 0;
+    position: absolute;
+    bottom: 200px; }
+    .introduction-container ul li {
+      display: inline-block;
+      text-align: center; }
+    .introduction-container ul li + li:before {
+      content: " / "; }
+
+.name-header {
+  width: 200px;
+  display: block;
+  margin: 0 auto; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@font-face {
+  font-family: 'amethystregular';
+  src: url("../fonts/amethyst-webfont.woff2") format("woff2"), url("../fonts/amethyst-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   margin: 0;
-  background-color: #bada55; }
+  font-family: 'amethystregular';
+  background-color: yellow; }

@@ -1,0 +1,46 @@
+$navy: #011627;
+$teal: #2ec4b6; 
+$off-white: #fffffa; 
+$accent-font: 'amethystregular';
+
+.introduction-container {
+	position: relative;
+	background-color: $navy;
+	height: 100vh;
+	h1 {
+		font-family: $accent-font;
+		color: $off-white;
+	}   
+	h2, ul {
+		color: $teal; 
+		font-family: 'Martel Sans', sans-serif;
+		text-align: center; 
+		margin: 0; 
+	}
+	h2 {
+		font-size: 14px; 
+		padding: 40px 0 20px 0; 
+	}
+	ul {
+		list-style: none;
+		background-color: white;
+		padding-left: 0; 
+		position: absolute;
+		bottom: 200px;  
+		li {
+			display: inline-block;
+			text-align: center;  
+		}
+		li+li {
+			&:before {
+				content: " / "
+			}
+		}	
+	} 
+}
+
+.name-header {
+	width: 200px; 
+	display: block; 
+	margin: 0 auto; 
+}

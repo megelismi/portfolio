@@ -1,6 +1,32 @@
-$badass: #bada55;
-body { 
-  margin: 0; 
-  background-color: $badass;  
+@import "introduction"; 
+
+@-ms-viewport{
+  width: device-width;
 }
 
+@font-face {
+  font-family: 'amethystregular';
+  src: url('../fonts/amethyst-webfont.woff2') format('woff2'),
+       url('../fonts/amethyst-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$navy: #011627;
+$teal: #2ec4b6; 
+$off-white: #fffffa; 
+$accent-font: 'amethystregular';
+
+body { 
+  margin: 0; 
+  font-family: 'amethystregular';
+  background-color: yellow;  
+}
+
+// .centered-container {
+// 	padding-left: 20px; 
+// 	padding-right: 20px; 
+// 	max-width: 1000px; 
+// 	margin-left: auto; 
+// 	margin-right: auto; 
+// }
