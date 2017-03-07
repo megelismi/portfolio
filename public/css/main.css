@@ -12,7 +12,6 @@
   .introduction-container h2, .introduction-container ul {
     color: #2ec4b6;
     font-family: 'Libre Franklin 100', sans-serif;
-    font-weight: normal;
     margin: 0;
     font-size: 20px; }
   .introduction-container ul {
@@ -33,7 +32,7 @@
   background-color: #2ec4b6; }
 
 .about-header {
-  width: 310px; }
+  width: 280px; }
 
 .about-me-container {
   height: 100vh;
@@ -50,13 +49,74 @@
 
 .work-header {
   margin-right: 10px;
-  width: 300px; }
+  width: 270px; }
 
 .localize-container {
-  background-color: blue;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/city.jpg") no-repeat center center fixed;
   background-size: cover; }
+
+.edster-container {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/travel.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+.kapitol-container {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/kapitol.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+.yaarn-container {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/yaarn-story.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+.work-sample-header, .work-sample-description, .see-project-details-button {
+  color: white;
+  margin: 0; }
+
+.work-sample-header {
+  font-size: 32px; }
+
+.see-project-details-button {
+  border: 2px solid #2ec4b6;
+  background-color: transparent;
+  height: 35px;
+  width: 40px;
+  margin: 8px 0; }
+  .see-project-details-button:hover {
+    opacity: 0.7; }
+  .see-project-details-button:focus {
+    outline: none; }
+
+#localize-details-container {
+  height: 100vh; }
+
+.project-details {
+  margin: 20px; }
+  .project-details p, .project-details span {
+    font-size: 14px; }
+  .project-details a {
+    color: #011627;
+    font-size: 14px; }
+    .project-details a:hover {
+      opacity: 0.7; }
+
+.hidden {
+  display: none; }
+
+.close-button {
+  float: right;
+  margin: 15px 30px;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  color: #2ec4b6; }
+  .close-button:hover {
+    opacity: 0.7; }
+
+.close-button-container {
+  height: 30px; }
 
 @-ms-viewport {
   width: device-width; }
@@ -70,10 +130,18 @@
 body {
   margin: 0;
   background-color: #fffffa;
-  font-family: 'Libre Franklin 100', sans-serif; }
+  font-family: 'Libre Franklin 100', sans-serif;
+  color: #011627; }
 
-.label-container {
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+.centered-container {
   height: 100vh;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.bold {
+  font-weight: bold; }

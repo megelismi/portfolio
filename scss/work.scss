@@ -1,14 +1,9 @@
 .work-header {
 	margin-right: 10px; 
-	width: 300px; 
-}
-
-.work-samples-container {
-
+	width: 270px; 
 }
 
 .localize-container {
-	background-color: blue;
 	height: 100vh; 
 	background:
 	linear-gradient(
@@ -18,4 +13,102 @@
 	url('../imgs/city.jpg')
 	no-repeat center center fixed;
 background-size: cover;
+}
+
+.edster-container {
+	height: 100vh; 
+	background:
+	linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+	url('../imgs/travel.jpg')
+	no-repeat center center fixed;
+background-size: cover;
+}
+
+.kapitol-container {
+	height: 100vh; 
+	background:
+	linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+	url('../imgs/kapitol.jpg')
+	no-repeat center center fixed;
+	background-size: cover;
+}
+
+.yaarn-container {
+	height: 100vh; 
+	background:
+	linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+	url('../imgs/yaarn-story.jpg')
+	no-repeat center center fixed;
+	background-size: cover;
+}
+
+.work-sample-header, .work-sample-description, .see-project-details-button {
+	color: white; 
+	margin: 0; 
+}
+
+.work-sample-header {
+	font-size: 32px;
+}
+
+.see-project-details-button {
+	border: 2px solid $teal;
+	background-color: transparent;
+	height: 35px;
+ 	width: 40px;
+ 	margin: 8px 0; 
+	&:hover {
+		opacity: 0.7;
+	}
+	&:focus {
+		outline: none; 
+	}
+}
+
+#localize-details-container {
+	height: 100vh; 
+}
+
+.project-details {
+	margin: 20px; 
+	p, span {
+		font-size: 14px; 
+	}
+
+	a {
+		color: $navy;
+		font-size: 14px; 
+		&:hover {
+			opacity: 0.7; 
+		}
+	}
+}
+
+.hidden {
+	display: none; 
+}
+
+.close-button {
+	float: right;
+	margin: 15px 30px;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  color: $teal;
+  &:hover {
+  	opacity: 0.7; 
+  }
+}
+
+.close-button-container {
+	height: 30px;  
 }

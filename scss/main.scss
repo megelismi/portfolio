@@ -23,11 +23,21 @@ body {
   margin: 0; 
   background-color: $off-white; 
   font-family: 'Libre Franklin 100', sans-serif;
+  color: $navy;
 }
 
-.label-container {
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal; 
+}
+
+.centered-container {
 	height: 100vh; 
+	flex-direction: column; 
 	display: flex; 
 	justify-content: center; 
 	align-items: center; 
+}
+
+.bold {
+	font-weight: bold; 
 }
