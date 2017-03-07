@@ -1,0 +1,30 @@
+$navy: #011627;
+$teal: #2ec4b6; 
+$off-white: #fffffa; 
+
+
+.about-label-container {
+	background-color: $teal; 
+}
+
+.about-header {
+	width: 310px; 
+}
+
+.about-me-container {
+	height: 100vh; 
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	// border-bottom: 2px solid $teal; 
+	p {
+		margin: 0 20px 30px 20px; 
+	}
+}
+
+.profile-picture {
+	width: 150px;
+	margin: 30px 0;
+	border-radius: 2px;  
+}
+
