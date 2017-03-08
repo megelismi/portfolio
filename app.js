@@ -7,9 +7,8 @@ $(function() {
 	});
 
 	$('#close-localize').click(function() {
-  $('#localize-details-container').addClass('hidden'); 
-});
-
+  	$('#localize-details-container').addClass('hidden'); 
+	});
 
 	$('#edster-more').click(function() {
 		console.log('this', this)
@@ -18,7 +17,6 @@ $(function() {
 	});
 
 	$('#close-edster').click(function() {
-			console.log('something happened');
 	  $('#edster-details-container').addClass('hidden'); 
 	});
 
@@ -29,7 +27,6 @@ $(function() {
 	});
 
 	$('#close-kapitol').click(function() {
-			console.log('something happened');
 	  $('#kapitol-details-container').addClass('hidden'); 
 	});
 
@@ -40,8 +37,7 @@ $(function() {
 	});
 
 	$('#close-yaarn').click(function() {
-		console.log('something happened');
-  $('#yaarn-details-container').addClass('hidden'); 
-});
+  	$('#yaarn-details-container').addClass('hidden'); 
+	});
 
 });
