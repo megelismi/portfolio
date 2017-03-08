@@ -1,34 +1,39 @@
 @import url("https://fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,700,700i|Martel+Sans:200,300,400|News+Cycle:400,700");
-.introduction-container {
+#introduction-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #011627;
   height: 100vh; }
-  .introduction-container h1 {
+  #introduction-container a {
+    color: inherit;
+    text-decoration: none;
+    padding-bottom: 6px; }
+    #introduction-container a:hover {
+      border-bottom: 3px solid #fffffa; }
+  #introduction-container h1 {
     font-family: "amethystregular";
     color: #fffffa; }
-  .introduction-container h2, .introduction-container ul {
+  #introduction-container h2, #introduction-container ul {
     color: #2ec4b6;
     font-family: 'Libre Franklin 100', sans-serif;
     margin: 0;
     font-size: 20px; }
-  .introduction-container ul {
+  #introduction-container ul {
     list-style: none;
     padding-left: 0;
     padding-top: 14px; }
-    .introduction-container ul li {
+    #introduction-container ul li {
       display: inline-block;
-      text-align: center; }
-    .introduction-container ul li + li:before {
-      content: " / "; }
+      text-align: center;
+      line-height: 28px; }
 
 .name-header {
   width: 270px;
   margin: 30px 15px 30px 0; }
 
-.about-label-container {
+#about-label-container {
   background-color: #2ec4b6; }
 
 .about-header {
@@ -125,9 +130,8 @@
 .close-button-container {
   height: 30px; }
 
-.contact-label-container {
-  background-color: #011627;
-  height: 100vh; }
+#contact-label-container {
+  background-color: #011627; }
 
 #contact-details {
   height: 50vh;

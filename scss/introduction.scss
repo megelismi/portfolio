@@ -3,13 +3,21 @@ $teal: #2ec4b6;
 $off-white: #fffffa; 
 $accent-font: 'amethystregular';
 
-.introduction-container {
+#introduction-container {
 	display: flex;
 	flex-direction: column; 
 	justify-content: center; 
 	align-items:center; 
 	background-color: $navy;
 	height: 100vh;
+	a {
+		color: inherit;
+		text-decoration: none;
+		padding-bottom: 6px; 
+		&:hover {
+			border-bottom: 3px solid $off-white;
+		}
+	}
 	h1 {
 		font-family: $accent-font;
 		color: $off-white;
@@ -26,12 +34,8 @@ $accent-font: 'amethystregular';
 		padding-top: 14px; 
 		li {
 			display: inline-block;
-			text-align: center;  
-		}
-		li+li {
-			&:before {
-				content: " / "
-			}
+			text-align: center; 
+			line-height: 28px;
 		}	
 	} 
 }
