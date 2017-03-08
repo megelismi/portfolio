@@ -8,8 +8,20 @@ $off-white: #fffffa;
 }
 
 #contact-details {
-	height: 100vh;
+	height: 50vh;
+	padding: 15px; 
+	a {
+		color: inherit; 
+	}
+	p {
+		font-size: 18px; 
+		line-height: 30px; 
+	}
 }
 .contact-header {
- 	width: 270px;
+ 	width: 285px;
 }  
+
+#name-contact {
+	font-size: 20px; 
+}

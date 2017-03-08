@@ -1,6 +1,6 @@
 .work-header {
 	margin-right: 10px; 
-	width: 270px; 
+	width: 240px; 
 }
 
 #localize-container {
@@ -56,8 +56,12 @@ background-size: cover;
 	margin: 0; 
 }
 
+.work-sample-description {
+	font-size: 18px;
+}
+
 .work-sample-header {
-	font-size: 32px;
+	font-size: 36px;
 }
 
 .see-project-details-button {
@@ -76,13 +80,14 @@ background-size: cover;
 }
 
 #localize-details-container {
-	height: 100vh; 
+	height: 100vh;
 }
 
 .project-details {
 	margin: 20px; 
 	p, span {
-		font-size: 14px; 
+		font-size: 18px;
+    line-height: 28px; 
 	}
 
 	a {

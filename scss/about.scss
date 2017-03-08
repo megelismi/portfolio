@@ -7,7 +7,7 @@ $off-white: #fffffa;
 }
 
 .about-header {
-	width: 280px; 
+	width: 260px; 
 }
 
 .about-me-container {
@@ -16,7 +16,9 @@ $off-white: #fffffa;
 	flex-direction: column; 
 	align-items: center; 
 	p {
-		margin: 0 20px 30px 20px; 
+		margin: 0 20px 30px 20px;
+		line-height: 26px;
+    font-size: 18px; 
 	}
 }
 
