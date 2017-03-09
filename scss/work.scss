@@ -3,6 +3,28 @@
 	width: 240px; 
 }
 
+#localize-screenshot {
+	width: 350px;
+	height: 250px;
+	// border: 1px solid lightgray;
+	box-shadow: 1px 1px 1px 1px #ccc;
+	background-image: url('../imgs/localize.png');
+	background-size: 350px 250px;
+	span {
+		display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: rgba(0,0,0,.10);
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    &:hover {
+    	opacity: 1;
+    }
+	}
+}
+
 #localize-container {
 	height: 100vh; 
 	background:
@@ -77,10 +99,6 @@ background-size: cover;
 	&:focus {
 		outline: none; 
 	}
-}
-
-#localize-details-container {
-	height: 100vh;
 }
 
 .project-details {

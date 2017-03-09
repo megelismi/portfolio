@@ -58,6 +58,24 @@
   margin-right: 10px;
   width: 240px; }
 
+#localize-screenshot {
+  width: 350px;
+  height: 250px;
+  box-shadow: 1px 1px 1px 1px #ccc;
+  background-image: url("../imgs/localize.png");
+  background-size: 350px 250px; }
+  #localize-screenshot span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.1);
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s; }
+    #localize-screenshot span:hover {
+      opacity: 1; }
+
 #localize-container {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/city.jpg") no-repeat center center fixed;
@@ -99,9 +117,6 @@
     opacity: 0.7; }
   .see-project-details-button:focus {
     outline: none; }
-
-#localize-details-container {
-  height: 100vh; }
 
 .project-details {
   margin: 20px; }
@@ -179,12 +194,11 @@ h1, h2, h3, h4, h5, h6 {
 .details {
   margin: 20px; }
   .details p, .details span {
-    font-size: 14px; }
+    font-size: 18px;
+    line-height: 26px; }
   .details a {
     color: #011627;
     font-size: 14px; }
-    .details a:hover {
-      opacity: 0.7; }
 
 .fa {
   padding-right: 15px;
