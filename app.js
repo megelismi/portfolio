@@ -40,6 +40,10 @@ $(function() {
   	$('#yaarn-details-container').addClass('hidden'); 
 	});
 
+	$('.menu').on('click', function() {
+		$('.menu').addClass('on'); 
+	})
+
   $(window).scroll(function() {  
     var topHeight = $('#introduction-container').height(); 
       var scroll = $(window).scrollTop();  

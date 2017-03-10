@@ -8,6 +8,16 @@
   cursor: pointer;
   z-index: 100; }
 
+.on {
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(105, 105, 105, 0.95);
+  position: fixed;
+  top: 0;
+  bottom: 0; }
+
 .toggle1, .toggle2, .toggle3 {
   width: 100%;
   background: lightgray;
