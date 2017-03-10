@@ -157,6 +157,42 @@
   font-size: 14px !important;
   margin: 0; }
 
+.hover-text {
+  display: none;
+  font-size: 12px;
+  position: absolute;
+  color: #011627;
+  font-weight: bold;
+  text-align: center;
+  width: 45px;
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.react-icon:hover + .hover-text {
+  display: block; }
+
+.node-icon:hover + .hover-text {
+  display: block; }
+
+.passport-icon:hover + .hover-text {
+  display: block; }
+
+.postgresql-icon:hover + .hover-text {
+  display: block; }
+
 #contact-label-container {
   background-color: #011627; }
 
