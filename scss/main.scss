@@ -58,10 +58,10 @@ h1, h2, h3, h4, h5, h6 {
 		li {
 			display: inline-block;
 			&:not(:first-child) {
-				padding: 10px;
+				padding: 15px;
 			} 
 			&:first-child {
-				padding: 10px 10px 10px 0; 
+				padding: 15px 15px 15px 0; 
 			}
 		}
 	}
@@ -72,18 +72,6 @@ h1, h2, h3, h4, h5, h6 {
 			opacity: 0.7; 
 		}
 	}
-}
-
-.icon {
-	width: 45px; 
-}
-
-.node {
-	width: 40px;
-}
-
-.react {
-	padding-left: 0 !important;
 }
 
 .fa {

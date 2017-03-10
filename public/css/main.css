@@ -153,6 +153,18 @@
 #edster-algo {
   width: 300px; }
 
+.icon {
+  width: 45px; }
+
+.node {
+  width: 40px; }
+
+.react {
+  padding-left: 0 !important; }
+
+.mongo {
+  width: 25px; }
+
 .jump-to-code {
   font-size: 14px !important;
   margin: 0; }
@@ -166,13 +178,9 @@
   text-align: center;
   width: 45px;
   -webkit-animation: fadein 2s;
-  /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s;
-  /* Firefox < 16 */
   -ms-animation: fadein 2s;
-  /* Internet Explorer */
   -o-animation: fadein 2s;
-  /* Opera < 12.1 */
   animation: fadein 2s; }
 
 @keyframes fadein {
@@ -181,16 +189,12 @@
   to {
     opacity: 1; } }
 
-.react-icon:hover + .hover-text {
-  display: block; }
-
-.node-icon:hover + .hover-text {
-  display: block; }
-
-.passport-icon:hover + .hover-text {
-  display: block; }
-
-.postgresql-icon:hover + .hover-text {
+.react-icon:hover + .hover-text,
+.node-icon:hover + .hover-text,
+.passport-icon:hover + .hover-text,
+.postgresql-icon:hover + .hover-text,
+.oauth-icon:hover + .hover-text,
+.mongodb-icon:hover + .hover-text {
   display: block; }
 
 #contact-label-container {
@@ -209,7 +213,8 @@
   width: 285px; }
 
 #name-contact {
-  font-size: 20px; }
+  font-size: 20px;
+  color: #2ec4b6; }
 
 @-ms-viewport {
   width: device-width; }
@@ -249,23 +254,14 @@ h1, h2, h3, h4, h5, h6 {
     .details ul li {
       display: inline-block; }
       .details ul li:not(:first-child) {
-        padding: 10px; }
+        padding: 15px; }
       .details ul li:first-child {
-        padding: 10px 10px 10px 0; }
+        padding: 15px 15px 15px 0; }
   .details a {
     color: #011627;
     font-size: 18px; }
     .details a:hover {
       opacity: 0.7; }
-
-.icon {
-  width: 45px; }
-
-.node {
-  width: 40px; }
-
-.react {
-  padding-left: 0 !important; }
 
 .fa {
   padding-right: 15px;
