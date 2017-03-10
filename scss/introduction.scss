@@ -3,6 +3,23 @@ $teal: #2ec4b6;
 $off-white: #fffffa; 
 $accent-font: 'amethystregular';
 
+.show {
+	width: 40px;
+  height: 30px;
+  position: fixed;
+  top: 20px;
+  left: 25px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.toggle1, .toggle2, .toggle3 {
+	width: 100%; 
+	background: lightgray; 
+	margin: 8px auto; 
+	height: 2px; 
+}
+
 #introduction-container {
 	display: flex;
 	flex-direction: column; 

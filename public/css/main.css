@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,700,700i|Martel+Sans:200,300,400|News+Cycle:400,700");
+.show {
+  width: 40px;
+  height: 30px;
+  position: fixed;
+  top: 20px;
+  left: 25px;
+  cursor: pointer;
+  z-index: 100; }
+
+.toggle1, .toggle2, .toggle3 {
+  width: 100%;
+  background: lightgray;
+  margin: 8px auto;
+  height: 2px; }
+
 #introduction-container {
   display: flex;
   flex-direction: column;
@@ -80,6 +95,12 @@
 
 #localize-screenshot {
   background-image: url("../imgs/localize.png"); }
+
+#yaarn-screenshot {
+  background-image: url("../imgs/yaarn-screenshot.png"); }
+
+#kapitol-screenshot {
+  background-image: url("../imgs/kapitol-screenshot5.png"); }
 
 #localize-container {
   height: 100vh;

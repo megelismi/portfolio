@@ -40,4 +40,15 @@ $(function() {
   	$('#yaarn-details-container').addClass('hidden'); 
 	});
 
+  $(window).scroll(function() {  
+    var topHeight = $('#introduction-container').height(); 
+      var scroll = $(window).scrollTop();  
+
+      if (scroll >= topHeight) {
+          $(".menu").addClass("show");
+      }
+      if (scroll < topHeight) {
+          $(".menu").removeClass("show");
+      }
+  });
 });
