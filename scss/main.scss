@@ -22,7 +22,6 @@ $off-white: #fffffa;
 
 body { 
   margin: 0; 
-  background-color: $off-white; 
   font-family: 'Libre Franklin 100', sans-serif;
   color: $navy;
 }
@@ -43,19 +42,46 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold; 
 }
 
+// .project-description-header {
+// 	color: $teal; 
+// }
+
 .details {
 	margin: 20px;
 	p, span {
 		font-size: 18px;
 		line-height: 26px; 
 	}
-	a {
-		color: $navy;
-		font-size: 14px; 
-		&:hover {
-			// opacity: 0.7; 
+	ul {
+		list-style: none;
+		padding-left:0;  
+		li {
+			display: inline-block;
+			padding: 10px;
+			li:first-child {
+				padding-left: 0 !important; 
+			}
 		}
 	}
+	a {
+		color: $navy;
+		font-size: 18px; 
+		&:hover {
+			opacity: 0.7; 
+		}
+	}
+}
+
+.icon {
+	width: 45px; 
+}
+
+.node {
+	width: 40px;
+}
+
+.react {
+	padding-left: 0 !important;
 }
 
 .fa {
@@ -65,4 +91,8 @@ h1, h2, h3, h4, h5, h6 {
 	&:hover {
 		opacity: 0.7;
 	}
+}
+
+.project-github {
+	color: $navy !important; 
 }

@@ -3,13 +3,11 @@
 	width: 240px; 
 }
 
-#localize-screenshot {
-	width: 350px;
-	height: 250px;
-	// border: 1px solid lightgray;
+.screenshot {
+	width: 300px;
+	height: 200px;
 	box-shadow: 1px 1px 1px 1px #ccc;
-	background-image: url('../imgs/localize.png');
-	background-size: 350px 250px;
+	background-size: 300px 200px;
 	span {
 		display: block;
     height: 100%;
@@ -23,6 +21,14 @@
     	opacity: 1;
     }
 	}
+}
+
+#edster-screenshot {
+	background-image: url('../imgs/edster.png');
+}
+
+#localize-screenshot {
+	background-image: url('../imgs/localize.png');
 }
 
 #localize-container {
@@ -136,3 +142,8 @@ background-size: cover;
 .close-button-container {
 	height: 30px;  
 }
+
+#edster-algo {
+	width: 300px; 
+}
+
