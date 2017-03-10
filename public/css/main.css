@@ -153,6 +153,10 @@
 #edster-algo {
   width: 300px; }
 
+.jump-to-code {
+  font-size: 14px !important;
+  margin: 0; }
+
 #contact-label-container {
   background-color: #011627; }
 
@@ -235,4 +239,5 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.7; }
 
 .project-github {
-  color: #011627 !important; }
+  color: #011627 !important;
+  padding-right: 8px !important; }
