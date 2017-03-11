@@ -19,7 +19,8 @@
   z-index: 100; }
 
 .menu-section__toggle.on {
-  right: 25px !important; }
+  left: auto;
+  right: 25px; }
 
 .menu-section.on {
   z-index: 100;
@@ -29,7 +30,22 @@
   background-color: rgba(105, 105, 105, 0.95);
   position: fixed;
   top: 0;
-  bottom: 0; }
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .menu-section.on nav ul {
+    list-style: none;
+    padding-left: 0; }
+    .menu-section.on nav ul li:hover {
+      color: #2ec4b6; }
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 45px;
+  line-height: 100px;
+  font-family: "amethystregular"; }
 
 .toggle1, .toggle2, .toggle3 {
   width: 100%;

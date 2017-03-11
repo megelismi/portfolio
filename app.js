@@ -1,5 +1,7 @@
 $(function() {
 
+	//.find && .closest
+
 	$('#localize-more').click(function() {
 	  $('#localize-details-container').removeClass('hidden'); 
 	  window.location.hash = '#localize-details-container';
@@ -10,7 +12,6 @@ $(function() {
 	});
 
 	$('#edster-more').click(function() {
-		console.log('this', this)
 	  $('#edster-details-container').removeClass('hidden'); 
 	  window.location.hash = '#edster-details-container';
 	});
@@ -20,9 +21,7 @@ $(function() {
 	});
 
 	$('#kapitol-more').click(function() {
-		console.log('this', this)
 	  $('#kapitol-details-container').removeClass('hidden'); 
-	  window.location.hash = '#kapitol-details-container';
 	});
 
 	$('#close-kapitol').click(function() {
@@ -32,7 +31,6 @@ $(function() {
 	$('#yaarn-more').click(function() {
 		console.log('this', this)
 	  $('#yaarn-details-container').removeClass('hidden'); 
-	  window.location.hash = '#yaarn-details-container';
 	});
 
 	$('#close-yaarn').click(function() {
@@ -40,13 +38,22 @@ $(function() {
 	});
 
 	$('.menu-section__toggle').on('click', function() {
-		console.log('clicked');
 		$('.menu-section').toggleClass('on');
 		$('.menu-section__toggle').toggleClass('on'); 
 		$('.toggle1').toggleClass('on'); 
 		$('.toggle2').toggleClass('on');
 		$('.toggle3').toggleClass('on');
+		$('.navigation-list').toggleClass('hide'); 
 	})
+
+	$('.nav-link').on('click', function() {
+		$('.menu-section').toggleClass('on');
+		$('.menu-section__toggle').toggleClass('on'); 
+		$('.toggle1').toggleClass('on'); 
+		$('.toggle2').toggleClass('on');
+		$('.toggle3').toggleClass('on');
+		$('.navigation-list').toggleClass('hide'); 
+	});
 
   $(window).scroll(function() {  
     var topHeight = $('#introduction-container').height(); 

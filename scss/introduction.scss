@@ -26,7 +26,8 @@ $accent-font: 'amethystregular';
 }
 
 .menu-section__toggle.on {
-  right: 25px !important;
+  left: auto; 
+  right: 25px;
 }
 
 .menu-section.on {
@@ -38,6 +39,28 @@ $accent-font: 'amethystregular';
   position: fixed;
   top: 0;
   bottom: 0;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  nav { 
+  	ul {
+  		list-style: none;
+  		padding-left: 0; 
+  		li {
+  			&:hover {
+  				color: $teal; 
+  			}
+  		}
+  	}
+  }
+}
+
+.nav-link {
+	text-decoration: none; 
+	color: white; 
+	font-size: 45px;
+	line-height: 100px;
+	font-family: $accent-font;
 }
 
 .toggle1, .toggle2, .toggle3 {
