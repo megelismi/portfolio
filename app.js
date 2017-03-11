@@ -1,4 +1,3 @@
-
 $(function() {
 
 	$('#localize-more').click(function() {
@@ -40,8 +39,13 @@ $(function() {
   	$('#yaarn-details-container').addClass('hidden'); 
 	});
 
-	$('.menu').on('click', function() {
-		$('.menu').addClass('on'); 
+	$('.menu-section__toggle').on('click', function() {
+		console.log('clicked');
+		$('.menu-section').toggleClass('on');
+		$('.menu-section__toggle').toggleClass('on'); 
+		$('.toggle1').toggleClass('on'); 
+		$('.toggle2').toggleClass('on');
+		$('.toggle3').toggleClass('on');
 	})
 
   $(window).scroll(function() {  
@@ -49,10 +53,10 @@ $(function() {
       var scroll = $(window).scrollTop();  
 
       if (scroll >= topHeight) {
-          $(".menu").addClass("show");
+          $(".menu-section__toggle").removeClass("hide");
       }
       if (scroll < topHeight) {
-          $(".menu").removeClass("show");
+          $(".menu-section__toggle").addClass("hide");
       }
   });
 });

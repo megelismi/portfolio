@@ -3,7 +3,19 @@ $teal: #2ec4b6;
 $off-white: #fffffa; 
 $accent-font: 'amethystregular';
 
-.show {
+.menu-section {
+	-moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+  width: 100%;
+}
+
+.hide {
+	display: none; 
+}
+
+.menu-section__toggle {
 	width: 40px;
   height: 30px;
   position: fixed;
@@ -13,7 +25,11 @@ $accent-font: 'amethystregular';
   z-index: 100;
 }
 
-.on {
+.menu-section__toggle.on {
+  right: 25px !important;
+}
+
+.menu-section.on {
   z-index: 100;
   width: 100%;
   height: 100%;
@@ -29,6 +45,24 @@ $accent-font: 'amethystregular';
 	background: lightgray; 
 	margin: 8px auto; 
 	height: 2px; 
+}
+
+.toggle1.on, .toggle3.on {
+	float: right;
+	margin: 8px 8px; 
+	height: 3px; 
+}
+
+.toggle1.on {
+	transform: rotate(45deg) translate(7px, 7px);
+}
+
+.toggle2.on {
+	display: none; 
+}
+
+.toggle3.on {
+	transform: rotate(-45deg) translate(8px, -8px); 
 }
 
 #introduction-container {
