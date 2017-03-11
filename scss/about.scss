@@ -11,15 +11,33 @@ $off-white: #fffffa;
 }
 
 .about-me-container {
-	height: 100vh; 
 	display: flex; 
 	flex-direction: column; 
 	align-items: center; 
 	p {
-		margin: 0 20px 30px 20px;
+		margin: 0 20px 15px 20px;
 		line-height: 26px;
-    font-size: 18px; 
+    font-size: 16px; 
 	}
+}
+
+.about-me-text-container {
+	margin-top: 10px; 
+	a {
+		color: $navy; 
+		font-weight: bold; 
+		// opacity: 0.8; 
+		border-bottom: 1px $teal dashed;
+		text-decoration: none; 
+		&:hover {
+			opacity: 1;
+			color: $teal;  
+		}
+	}
+}
+
+.about-me-intro {
+	font-size: 24px !important; 
 }
 
 .profile-picture {

@@ -1,72 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,700,700i|Martel+Sans:200,300,400|News+Cycle:400,700");
-.menu-section {
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  width: 100%; }
-
-.hide {
-  display: none; }
-
-.menu-section__toggle {
-  width: 40px;
-  height: 30px;
-  position: fixed;
-  top: 20px;
-  left: 25px;
-  cursor: pointer;
-  z-index: 100; }
-
-.menu-section__toggle.on {
-  left: auto;
-  right: 25px; }
-
-.menu-section.on {
-  z-index: 100;
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-color: rgba(105, 105, 105, 0.95);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .menu-section.on nav ul {
-    list-style: none;
-    padding-left: 0; }
-    .menu-section.on nav ul li:hover {
-      color: #2ec4b6; }
-
-.nav-link {
-  text-decoration: none;
-  color: white;
-  font-size: 45px;
-  line-height: 100px;
-  font-family: "amethystregular"; }
-
-.toggle1, .toggle2, .toggle3 {
-  width: 100%;
-  background: lightgray;
-  margin: 8px auto;
-  height: 2px; }
-
-.toggle1.on, .toggle3.on {
-  float: right;
-  margin: 8px 8px;
-  height: 3px; }
-
-.toggle1.on {
-  transform: rotate(45deg) translate(7px, 7px); }
-
-.toggle2.on {
-  display: none; }
-
-.toggle3.on {
-  transform: rotate(-45deg) translate(8px, -8px); }
-
 #introduction-container {
   display: flex;
   flex-direction: column;
@@ -108,14 +40,27 @@
   width: 260px; }
 
 .about-me-container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .about-me-container p {
-    margin: 0 20px 30px 20px;
+    margin: 0 20px 15px 20px;
     line-height: 26px;
-    font-size: 18px; }
+    font-size: 16px; }
+
+.about-me-text-container {
+  margin-top: 10px; }
+  .about-me-text-container a {
+    color: #011627;
+    font-weight: bold;
+    border-bottom: 1px #2ec4b6 dashed;
+    text-decoration: none; }
+    .about-me-text-container a:hover {
+      opacity: 1;
+      color: #2ec4b6; }
+
+.about-me-intro {
+  font-size: 24px !important; }
 
 .profile-picture {
   width: 150px;
@@ -200,8 +145,8 @@
 .project-details {
   margin: 20px; }
   .project-details p, .project-details span {
-    font-size: 18px;
-    line-height: 28px; }
+    font-size: 16px;
+    line-height: 26px; }
   .project-details a {
     color: #011627;
     font-size: 14px; }
@@ -320,7 +265,7 @@ h1, h2, h3, h4, h5, h6 {
 .details {
   margin: 20px; }
   .details p, .details span {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px; }
   .details ul {
     list-style: none;
@@ -347,3 +292,70 @@ h1, h2, h3, h4, h5, h6 {
 .project-github {
   color: #011627 !important;
   padding-right: 8px !important; }
+
+.menu-section {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  width: 100%; }
+
+.hide {
+  display: none; }
+
+.menu-section__toggle {
+  width: 40px;
+  height: 30px;
+  position: fixed;
+  top: 20px;
+  left: 25px;
+  cursor: pointer;
+  z-index: 100; }
+
+.menu-section__toggle.on {
+  left: auto;
+  right: 25px; }
+
+.menu-section.on {
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(1, 22, 39, 0.95);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .menu-section.on nav ul {
+    list-style: none;
+    padding-left: 0; }
+    .menu-section.on nav ul li:hover {
+      color: #2ec4b6; }
+
+.nav-link {
+  text-decoration: none;
+  color: #fffffa;
+  font-size: 70px;
+  line-height: 80px; }
+
+.toggle1, .toggle2, .toggle3 {
+  width: 100%;
+  background: lightgray;
+  margin: 8px auto;
+  height: 2px; }
+
+.toggle1.on, .toggle3.on {
+  float: right;
+  margin: 8px 8px;
+  height: 3px; }
+
+.toggle1.on {
+  transform: rotate(45deg) translate(7px, 6px); }
+
+.toggle2.on {
+  display: none; }
+
+.toggle3.on {
+  transform: rotate(-45deg) translate(8px, -8px); }

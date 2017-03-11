@@ -3,7 +3,7 @@ $(function() {
 	//.find && .closest
 
 	$('#localize-more').click(function() {
-	  $('#localize-details-container').removeClass('hidden'); 
+	  $('#localize-details-container').removeClass('hidden');
 	  window.location.hash = '#localize-details-container';
 	});
 
@@ -21,7 +21,8 @@ $(function() {
 	});
 
 	$('#kapitol-more').click(function() {
-	  $('#kapitol-details-container').removeClass('hidden'); 
+	  $('#kapitol-details-container').removeClass('hidden');
+	  window.location.hash = '#kapitol-details-container'; 
 	});
 
 	$('#close-kapitol').click(function() {
@@ -30,7 +31,8 @@ $(function() {
 
 	$('#yaarn-more').click(function() {
 		console.log('this', this)
-	  $('#yaarn-details-container').removeClass('hidden'); 
+	  $('#yaarn-details-container').removeClass('hidden');
+	  window.location.hash = '#yaarn-details-container';  
 	});
 
 	$('#close-yaarn').click(function() {
