@@ -4,7 +4,7 @@
 @import "contact"; 
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,700,700i|Martel+Sans:200,300,400|News+Cycle:400,700');
 
-@-ms-viewport{
+@-ms-viewport {
   width: device-width;
 }
 
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .details {
 	margin: 20px;
-	p, span {
+	p {
 		font-size: 16px;
 		line-height: 26px; 
 	}
@@ -170,4 +170,83 @@ h1, h2, h3, h4, h5, h6 {
 
 .toggle3.on {
 	transform: rotate(-45deg) translate(8px, -8px); 
+}
+
+
+@media screen and (min-width: 460px) {
+  .name-header {
+  	width: 320px;  
+  }
+
+  #introduction-container {
+  	h2, ul {
+  		font-size: 26px; 
+  	}
+  }
+
+  .about-header {
+  	width: 320px;
+  }
+
+  .profile-picture {
+  	width: 160px; 
+  }
+
+  .about-me-text-container {
+  	p {
+  		font-size: 18px; 
+  	}
+  }
+
+  .work-header {
+  	width: 290px; 
+  }
+
+  .work-sample-header {
+  	font-size: 48px; 
+  }
+
+  .work-sample-description {
+  	font-size: 22px; 
+  }
+
+  .see-project-details-button {
+  	font-size: 16px; 
+  }
+
+  .screenshot {
+    width: 460px;
+    height: 300px;
+    background-size: 460px 300px;
+  }
+
+  .details {
+  	p {
+  		font-size: 18px; 
+  	}
+  }
+
+  .jump-to-code {
+  	font-size: 16px !important;
+  }
+
+  .project-github {
+  	font-size: 24px; 
+  }
+
+  .node {
+  	width: 50px !important;
+  }
+  .icon {
+  	width: 60px; 
+  }
+
+  #edster-algo {
+  	width: 460px; 
+  }
+
+  .contact-header {
+  	width: 380px; 
+  }
+
 }
