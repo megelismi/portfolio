@@ -336,8 +336,9 @@ h1, h2, h3, h4, h5, h6 {
 .nav-link {
   text-decoration: none;
   color: #fffffa;
-  font-size: 70px;
-  line-height: 80px; }
+  font-size: 40px;
+  line-height: 80px;
+  font-family: "amethystregular"; }
 
 .toggle1, .toggle2, .toggle3 {
   width: 100%;
