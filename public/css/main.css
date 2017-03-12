@@ -49,14 +49,10 @@
     font-size: 16px; }
 
 .about-me-text-container {
-  margin-top: 10px; }
+  margin: 20px; }
   .about-me-text-container a {
-    color: #011627;
-    font-weight: bold;
-    border-bottom: 1px #2ec4b6 dashed;
-    text-decoration: none; }
+    color: #011627; }
     .about-me-text-container a:hover {
-      opacity: 1;
       color: #2ec4b6; }
 
 .about-me-intro {

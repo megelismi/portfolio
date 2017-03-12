@@ -22,15 +22,14 @@ $off-white: #fffffa;
 }
 
 .about-me-text-container {
-	margin-top: 10px; 
+	margin: 20px; 
 	a {
 		color: $navy; 
-		font-weight: bold; 
+		// font-weight: bold; 
 		// opacity: 0.8; 
-		border-bottom: 1px $teal dashed;
-		text-decoration: none; 
+		// border-bottom: 3px $teal solid;
+		// text-decoration: none; 
 		&:hover {
-			opacity: 1;
 			color: $teal;  
 		}
 	}
@@ -39,14 +38,6 @@ $off-white: #fffffa;
 .about-me-intro {
 	font-size: 24px !important; 
 }
-
-//
-// .profile-picture {
-// 	background-image: url('../imgs/profile.jpg');
-// 	width: 160px; 
-// 	height: 150px; 
-// 	background-size: 160px 150px;
-// }
 
 .profile-picture {
 	width: 150px;
