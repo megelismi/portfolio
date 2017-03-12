@@ -4,42 +4,16 @@
 }
 
 .screenshot {
-	height: 27vh;
-
-	box-shadow: 1px 1px 1px 1px #ccc; 
-	span {
-		display: block;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    background: rgba(0,0,0,.10);
-    -moz-transition: all 1s;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-    &:hover {
-    	opacity: 1;
-    }
-	}
-}
-
-#edster-screenshot {
-	background-image: url('../imgs/edster.png');
-	background-size: cover; 
-}
-
-#localize-screenshot {
-	background-image: url('../imgs/localize.png');
-	background-size: cover; 
-}
-
-#yaarn-screenshot {
-	background-image: url('../imgs/yaarn-screenshot.png');
-	background-size: cover; 
-}
-
-#kapitol-screenshot {
-	background-image: url('../imgs/kapitol-screenshot5.png');
-	background-size: cover; 
+	width: 100%;
+	box-shadow: 1px 1px 1px 1px #ccc; 	
+	filter: brightness(100%); 
+	transition: all 2s ease;	
+	&:hover {
+		filter: brightness(80%);
+		transition: all 2s ease;
+		width: 100%;
+		height: 100%;
+	} 
 }
 
 #localize-container {
