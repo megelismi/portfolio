@@ -103,8 +103,7 @@ background-size: cover;
 .see-project-details-button {
 	border: 3px solid $teal;
 	background-color: transparent;
-	height: 50px;
-  width: 55px;
+	padding: 14px 8px; 
   font-size: 14px;
  	margin: 8px 0; 
 	&:hover {

@@ -133,8 +133,7 @@
 .see-project-details-button {
   border: 3px solid #2ec4b6;
   background-color: transparent;
-  height: 50px;
-  width: 55px;
+  padding: 14px 8px;
   font-size: 14px;
   margin: 8px 0; }
   .see-project-details-button:hover {
