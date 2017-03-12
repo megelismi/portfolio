@@ -68,10 +68,8 @@
   width: 240px; }
 
 .screenshot {
-  width: 330px;
-  height: 211px;
-  box-shadow: 1px 1px 1px 1px #ccc;
-  background-size: 330px 211px; }
+  height: 27vh;
+  box-shadow: 1px 1px 1px 1px #ccc; }
   .screenshot span {
     display: block;
     height: 100%;
@@ -85,16 +83,20 @@
       opacity: 1; }
 
 #edster-screenshot {
-  background-image: url("../imgs/edster.png"); }
+  background-image: url("../imgs/edster.png");
+  background-size: cover; }
 
 #localize-screenshot {
-  background-image: url("../imgs/localize.png"); }
+  background-image: url("../imgs/localize.png");
+  background-size: cover; }
 
 #yaarn-screenshot {
-  background-image: url("../imgs/yaarn-screenshot.png"); }
+  background-image: url("../imgs/yaarn-screenshot.png");
+  background-size: cover; }
 
 #kapitol-screenshot {
-  background-image: url("../imgs/kapitol-screenshot5.png"); }
+  background-image: url("../imgs/kapitol-screenshot5.png");
+  background-size: cover; }
 
 #localize-container {
   height: 100vh;
@@ -153,11 +155,13 @@
 
 .close-button {
   float: right;
-  margin: 15px 30px;
-  font-size: 18px;
-  background: transparent;
+  margin: 5px 10px;
+  font-size: 20px;
   border: none;
-  color: #2ec4b6; }
+  background: transparent;
+  padding: 8px 16px;
+  color: #011627;
+  opacity: 0.5; }
   .close-button:hover {
     opacity: 0.7; }
 

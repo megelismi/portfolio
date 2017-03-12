@@ -4,10 +4,9 @@
 }
 
 .screenshot {
-	width: 330px;
-	height: 211px;
-	box-shadow: 1px 1px 1px 1px #ccc;
-	background-size: 330px 211px;
+	height: 27vh;
+
+	box-shadow: 1px 1px 1px 1px #ccc; 
 	span {
 		display: block;
     height: 100%;
@@ -25,18 +24,22 @@
 
 #edster-screenshot {
 	background-image: url('../imgs/edster.png');
+	background-size: cover; 
 }
 
 #localize-screenshot {
 	background-image: url('../imgs/localize.png');
+	background-size: cover; 
 }
 
 #yaarn-screenshot {
 	background-image: url('../imgs/yaarn-screenshot.png');
+	background-size: cover; 
 }
 
 #kapitol-screenshot {
 	background-image: url('../imgs/kapitol-screenshot5.png');
+	background-size: cover; 
 }
 
 #localize-container {
@@ -135,12 +138,14 @@ background-size: cover;
 }
 
 .close-button {
-	float: right;
-	margin: 15px 30px;
-  font-size: 18px;
-  background: transparent;
-  border: none;
-  color: $teal;
+  float: right;
+	margin: 5px 10px;
+	font-size: 20px;
+	border: none;
+	background: transparent;
+	padding: 8px 16px;
+	color: $navy;
+	opacity: 0.5;
   &:hover {
   	opacity: 0.7; 
   }
