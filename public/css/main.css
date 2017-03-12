@@ -68,10 +68,10 @@
   width: 240px; }
 
 .screenshot {
-  width: 300px;
-  height: 200px;
+  width: 330px;
+  height: 211px;
   box-shadow: 1px 1px 1px 1px #ccc;
-  background-size: 300px 200px; }
+  background-size: 330px 211px; }
   .screenshot span {
     display: block;
     height: 100%;
