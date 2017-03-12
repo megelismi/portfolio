@@ -15,20 +15,15 @@ $off-white: #fffffa;
 	flex-direction: column; 
 	align-items: center; 
 	p {
-		margin: 0 20px 15px 20px;
 		line-height: 26px;
     font-size: 16px; 
 	}
 }
 
 .about-me-text-container {
-	margin: 20px; 
+	margin: 0px 20px 20px 30px; 
 	a {
-		color: $navy; 
-		// font-weight: bold; 
-		// opacity: 0.8; 
-		// border-bottom: 3px $teal solid;
-		// text-decoration: none; 
+		color: $navy;
 		&:hover {
 			color: $teal;  
 		}
@@ -41,7 +36,7 @@ $off-white: #fffffa;
 
 .profile-picture {
 	width: 150px;
-	margin: 30px 0;
+	margin: 30px 0 10px 0;
 	border-radius: 2px;  
 }
 

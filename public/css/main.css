@@ -44,12 +44,11 @@
   flex-direction: column;
   align-items: center; }
   .about-me-container p {
-    margin: 0 20px 15px 20px;
     line-height: 26px;
     font-size: 16px; }
 
 .about-me-text-container {
-  margin: 20px; }
+  margin: 0px 20px 20px 30px; }
   .about-me-text-container a {
     color: #011627; }
     .about-me-text-container a:hover {
@@ -60,7 +59,7 @@
 
 .profile-picture {
   width: 150px;
-  margin: 30px 0;
+  margin: 30px 0 10px 0;
   border-radius: 2px; }
 
 .work-header {
