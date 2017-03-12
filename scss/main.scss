@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	a {
 		color: $navy;
-		font-size: 18px; 
+		font-size: 16px; 
 		&:hover {
 			opacity: 0.7; 
 		}
@@ -212,12 +212,6 @@ h1, h2, h3, h4, h5, h6 {
   	font-size: 16px; 
   }
 
-  .screenshot {
-    width: 460px;
-    height: 300px;
-    background-size: 460px 300px;
-  }
-
   .details {
   	p {
   		font-size: 18px; 
@@ -237,10 +231,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   .icon {
   	width: 60px; 
-  }
-
-  #edster-algo {
-  	width: 460px; 
   }
 
   .contact-header {
