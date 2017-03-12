@@ -41,6 +41,13 @@ $off-white: #fffffa;
 }
 
 .profile-picture {
+	background-image: url('../imgs/profile.jpg');
+	width: 160px; 
+	height: 150px; 
+	background-size: 160px 150px;
+}
+
+.profile-picture {
 	width: 150px;
 	margin: 30px 0;
 	border-radius: 2px;  
