@@ -5,6 +5,7 @@
 
 .screenshot {
 	width: 100%;
+	margin-top: 20px; 
 	box-shadow: 1px 1px 1px 1px #ccc; 	
 	filter: brightness(100%); 
 	transition: all 2s ease;	
@@ -110,8 +111,7 @@ background-size: cover;
 }
 
 .close-button {
-  float: right;
-	margin: 5px 10px;
+	margin: 5px;
 	font-size: 20px;
 	border: none;
 	background: transparent;
@@ -121,10 +121,14 @@ background-size: cover;
   &:hover {
   	opacity: 0.5; 
   }
+  &:focus {
+  	outline: 0; 
+  }
 }
 
 .close-button-container {
-	height: 30px;  
+	width:10%; 
+	float:right;  
 }
 
 #edster-algo {

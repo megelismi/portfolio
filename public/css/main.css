@@ -68,6 +68,7 @@
 
 .screenshot {
   width: 100%;
+  margin-top: 20px;
   box-shadow: 1px 1px 1px 1px #ccc;
   filter: brightness(100%);
   transition: all 2s ease; }
@@ -131,8 +132,7 @@
   display: none; }
 
 .close-button {
-  float: right;
-  margin: 5px 10px;
+  margin: 5px;
   font-size: 20px;
   border: none;
   background: transparent;
@@ -141,9 +141,12 @@
   opacity: 0.8; }
   .close-button:hover {
     opacity: 0.5; }
+  .close-button:focus {
+    outline: 0; }
 
 .close-button-container {
-  height: 30px; }
+  width: 10%;
+  float: right; }
 
 #edster-algo {
   width: 100%; }
@@ -248,7 +251,8 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 26px; }
   .details ul {
     list-style: none;
-    padding-left: 0; }
+    padding-left: 0;
+    margin: 0; }
     .details ul li {
       display: inline-block; }
       .details ul li:not(:first-child) {
@@ -384,7 +388,8 @@ h1, h2, h3, h4, h5, h6 {
   #about-me-container {
     align-items: flex-start;
     justify-content: center;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     max-height: 100vh; }
     #about-me-container p {
       line-height: 26px;
@@ -397,7 +402,21 @@ h1, h2, h3, h4, h5, h6 {
     overflow: auto; }
   .details {
     margin: 0;
-    border-left: 1px solid gray;
+    border-left: 1px solid #2ec4b6;
     padding-left: 15px; }
   #contact-details {
-    padding-left: 15px; } }
+    padding: 35px;
+    height: 100vh;
+    position: relative; }
+    #contact-details p {
+      padding-right: 14px; }
+  #name-contact {
+    font-size: 22px !important;
+    line-height: 40px !important; }
+  #contact-name-email {
+    position: absolute;
+    top: 20%; }
+  #contact-links {
+    position: absolute;
+    bottom: 30%;
+    font-size: 20px; } }
