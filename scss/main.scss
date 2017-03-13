@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .centered-container {
 	height: 100vh; 
+	min-height: 800px;
 	flex-direction: column; 
 	display: flex; 
 	justify-content: center; 
@@ -140,6 +141,19 @@ h1, h2, h3, h4, h5, h6 {
   		}
   	}
   }
+}
+
+.fixed {
+	position: fixed; 
+	top: 0;
+	left: 0; 
+	width: 50%;
+	z-index: 1; 
+	background-color: white; 
+}
+
+.right {
+	float: right; 
 }
 
 .nav-link {
@@ -275,8 +289,8 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	#work-samples-container {
-		max-height: 100vh;
-		overflow: auto;
+		// max-height: 100vh;
+		// overflow: auto;
 	}
 
 	.details {
@@ -287,6 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 	#contact-details {
 		padding: 35px; 
 		height:100vh; 
+		min-height: 600px;
 		position: relative;
 		p {
 			padding-right: 14px;

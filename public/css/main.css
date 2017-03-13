@@ -106,6 +106,9 @@
 .work-sample-header {
   font-size: 36px; }
 
+.work-label-wrapper {
+  width: 50%; }
+
 .see-project-details-button {
   border: 3px solid #2ec4b6;
   background-color: transparent;
@@ -236,6 +239,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .centered-container {
   height: 100vh;
+  min-height: 800px;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -317,6 +321,17 @@ h1, h2, h3, h4, h5, h6 {
     .menu-section.on nav ul li:hover {
       color: #2ec4b6; }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  z-index: 1;
+  background-color: white; }
+
+.right {
+  float: right; }
+
 .nav-link {
   text-decoration: none;
   color: #fffffa;
@@ -387,19 +402,13 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%; }
   #about-me-container {
     align-items: flex-start;
-    justify-content: center;
-    overflow-y: auto;
-    overflow-x: hidden;
-    max-height: 100vh; }
+    justify-content: center; }
     #about-me-container p {
       line-height: 26px;
       font-size: 16px; }
   #profile-picture {
     width: 150px;
     margin-left: 30px; }
-  #work-samples-container {
-    max-height: 100vh;
-    overflow: auto; }
   .details {
     margin: 0;
     border-left: 1px solid #2ec4b6;
@@ -407,6 +416,7 @@ h1, h2, h3, h4, h5, h6 {
   #contact-details {
     padding: 35px;
     height: 100vh;
+    min-height: 600px;
     position: relative; }
     #contact-details p {
       padding-right: 14px; }

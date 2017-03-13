@@ -1,7 +1,6 @@
 $(function() {
 
 	//.find && .closest
-
 	$('#localize-more').click(function() {
 	  $('#localize-details-container').removeClass('hidden');
 	  window.location.hash = '#localize-details-container';
@@ -68,4 +67,19 @@ $(function() {
           $(".menu-section__toggle").addClass("hide");
       }
   });
+
+ 	var workDistance = $('#work-label-container').offset().top,
+ 	contactDistance = $('#contact-label-container').offset().top,
+  $window = $(window);
+
+	$window.scroll(function() {
+    if ( $window.scrollTop() >= workDistance ) {
+    	console.log('fixed');
+      $("#work-label-container").addClass("fixed");
+    }
+    if ($window.scrollTop() >= contactDistance) {
+    	console.log('got to contact');
+    	$("#work-label-container").removeClass("fixed");
+    }
+});
 });
