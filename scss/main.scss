@@ -21,6 +21,10 @@ $teal: #2ec4b6;
 $off-white: #fffffa; 
 $accent-font: 'amethystregular';
 
+* {
+	box-sizing: border-box;
+}
+
 body { 
   margin: 0; 
   font-family: 'Libre Franklin 100', sans-serif;
@@ -182,15 +186,15 @@ h1, h2, h3, h4, h5, h6 {
   	}
   }
 
-  .about-header {
+  #about-header {
   	width: 320px;
   }
 
-  .profile-picture {
+  #profile-picture {
   	width: 160px; 
   }
 
-  .about-me-text-container {
+  #about-me-text-container {
   	p {
   		font-size: 18px; 
   	}
@@ -213,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .details {
-  	p {
+  	p, a {
   		font-size: 18px; 
   	}
   }
@@ -236,5 +240,52 @@ h1, h2, h3, h4, h5, h6 {
   .contact-header {
   	width: 380px; 
   }
+}
 
+@media screen and (min-width: 600px) {
+
+	.screenshot, #edster-algo {
+		width: 80%; 
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	.section-container {
+		display: flex;
+	}
+
+	.label-container, .content-container {
+		width: 50%;
+	}
+
+	#about-me-container {
+		align-items: flex-start;
+		justify-content: center;
+		overflow:auto; 
+		max-height: 100vh;
+		p {
+			line-height: 26px;
+    	font-size: 16px;
+		}
+	}
+
+	#profile-picture {
+		width: 150px; 
+		margin-left: 30px;
+	}
+
+	#work-samples-container {
+		max-height: 100vh;
+		overflow: auto;
+	}
+
+	.details {
+		margin:0; 
+		border-left :1px solid gray;
+		padding-left: 15px; 
+	}
+	#contact-details {
+		padding-left: 15px;  
+	}
 }

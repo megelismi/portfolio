@@ -36,28 +36,28 @@
 #about-label-container {
   background-color: #2ec4b6; }
 
-.about-header {
+#about-header {
   width: 260px; }
 
-.about-me-container {
+#about-me-container {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .about-me-container p {
+  #about-me-container p {
     line-height: 26px;
     font-size: 16px; }
 
-.about-me-text-container {
+#about-me-text-container {
   margin: 0px 20px 20px 30px; }
-  .about-me-text-container a {
+  #about-me-text-container a {
     color: #011627; }
-    .about-me-text-container a:hover {
+    #about-me-text-container a:hover {
       color: #2ec4b6; }
 
-.about-me-intro {
+#about-me-intro {
   font-size: 24px !important; }
 
-.profile-picture {
+#profile-picture {
   width: 150px;
   margin: 30px 0 10px 0;
   border-radius: 2px; }
@@ -73,9 +73,7 @@
   transition: all 2s ease; }
   .screenshot:hover {
     filter: brightness(80%);
-    transition: all 2s ease;
-    width: 100%;
-    height: 100%; }
+    transition: all 2s ease; }
 
 #localize-container {
   height: 100vh;
@@ -222,6 +220,9 @@
   font-weight: normal;
   font-style: normal; }
 
+* {
+  box-sizing: border-box; }
+
 body {
   margin: 0;
   font-family: 'Libre Franklin 100', sans-serif;
@@ -344,11 +345,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 320px; }
   #introduction-container h2, #introduction-container ul {
     font-size: 26px; }
-  .about-header {
+  #about-header {
     width: 320px; }
-  .profile-picture {
+  #profile-picture {
     width: 160px; }
-  .about-me-text-container p {
+  #about-me-text-container p {
     font-size: 18px; }
   .work-header {
     width: 290px; }
@@ -358,7 +359,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 22px; }
   .see-project-details-button {
     font-size: 16px; }
-  .details p {
+  .details p, .details a {
     font-size: 18px; }
   .jump-to-code {
     font-size: 16px !important; }
@@ -370,3 +371,33 @@ h1, h2, h3, h4, h5, h6 {
     width: 60px; }
   .contact-header {
     width: 380px; } }
+
+@media screen and (min-width: 600px) {
+  .screenshot, #edster-algo {
+    width: 80%; } }
+
+@media screen and (min-width: 768px) {
+  .section-container {
+    display: flex; }
+  .label-container, .content-container {
+    width: 50%; }
+  #about-me-container {
+    align-items: flex-start;
+    justify-content: center;
+    overflow: auto;
+    max-height: 100vh; }
+    #about-me-container p {
+      line-height: 26px;
+      font-size: 16px; }
+  #profile-picture {
+    width: 150px;
+    margin-left: 30px; }
+  #work-samples-container {
+    max-height: 100vh;
+    overflow: auto; }
+  .details {
+    margin: 0;
+    border-left: 1px solid gray;
+    padding-left: 15px; }
+  #contact-details {
+    padding-left: 15px; } }
