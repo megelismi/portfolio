@@ -68,18 +68,35 @@ $(function() {
       }
   });
 
- 	var workDistance = $('#work-label-container').offset().top,
- 	contactDistance = $('#contact-label-container').offset().top,
-  $window = $(window);
+ updateContainer();
 
-	$window.scroll(function() {
-    if ( $window.scrollTop() >= workDistance ) {
-    	console.log('fixed');
-      $("#work-label-container").addClass("fixed");
-    }
-    if ($window.scrollTop() >= contactDistance) {
-    	console.log('got to contact');
-    	$("#work-label-container").removeClass("fixed");
-    }
+ $(window).resize(function() {
+ 		console.log('window resize called')
+ 		updateContainer();
+ });
+ 
 });
-});
+
+function updateContainer() {
+	console.log('update container called');
+	var workDistance = $('#work-label-container').offset().top,
+	yaarnDistance = $('#yaarn-container').offset().top,
+	localizeDistance = $('#localize-container').offset().top,
+	$window = $(window);
+  var $width = $(window).width();
+  console.log('width', $width)
+  if ($width >= 822) {
+    $window.scroll(function() {
+			if ( $window.scrollTop() >= localizeDistance ) {
+		   	$("#work-label-container").addClass("fixed").removeClass("absolute");
+		  } else {
+		    $("#work-label-container").removeClass("fixed");
+		  }
+		   if ($window.scrollTop() >= yaarnDistance) {
+		    	$("#work-label-container").addClass("absolute").removeClass("fixed");
+		   }
+		}); 
+  } else {
+  	$("#work-label-container").removeClass("absolute").removeClass("fixed");
+  }
+}

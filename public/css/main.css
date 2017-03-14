@@ -107,7 +107,7 @@
   font-size: 36px; }
 
 .work-label-wrapper {
-  width: 50%; }
+  width: 100%; }
 
 .see-project-details-button {
   border: 3px solid #2ec4b6;
@@ -329,6 +329,12 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
   background-color: white; }
 
+.absolute {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center; }
+
 .right {
   float: right; }
 
@@ -396,6 +402,9 @@ h1, h2, h3, h4, h5, h6 {
     width: 80%; } }
 
 @media screen and (min-width: 768px) {
+  .work-label-wrapper {
+    width: 50%;
+    position: relative; }
   .section-container {
     display: flex; }
   .label-container, .content-container {
