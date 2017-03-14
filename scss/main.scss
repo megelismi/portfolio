@@ -300,14 +300,10 @@ h1, h2, h3, h4, h5, h6 {
 		margin-left: 30px;
 	}
 
-	#work-samples-container {
-		// max-height: 100vh;
-		// overflow: auto;
-	}
-
 	.details {
 		margin:0; 
 		border-left :1px solid $teal;
+		border-bottom: 1px solid $teal;
 		padding-left: 15px; 
 	}
 	#contact-details {

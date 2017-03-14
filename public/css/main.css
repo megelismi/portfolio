@@ -421,6 +421,7 @@ h1, h2, h3, h4, h5, h6 {
   .details {
     margin: 0;
     border-left: 1px solid #2ec4b6;
+    border-bottom: 1px solid #2ec4b6;
     padding-left: 15px; }
   #contact-details {
     padding: 35px;

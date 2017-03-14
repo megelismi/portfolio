@@ -38,6 +38,8 @@ $(function() {
   	$('#yaarn-details-container').addClass('hidden'); 
 	});
 
+	//changes menu section from shorten nav lines to full page nav menu 
+
 	$('.menu-section__toggle').on('click', function() {
 		$('.menu-section').toggleClass('on');
 		$('.menu-section__toggle').toggleClass('on'); 
@@ -56,23 +58,32 @@ $(function() {
 		$('.navigation-list').toggleClass('hide'); 
 	});
 
-  $(window).scroll(function() {  
-    var topHeight = $('#introduction-container').height(); 
-      var scroll = $(window).scrollTop();  
+	//attaches floating nav to all containers except for the introduction container 
 
-      if (scroll >= topHeight) {
-          $(".menu-section__toggle").removeClass("hide");
-      }
-      if (scroll < topHeight) {
-          $(".menu-section__toggle").addClass("hide");
-      }
+  $(window).scroll(function() {  
+
+    var topHeight = $('#introduction-container').height(); 
+    var scroll = $(window).scrollTop();  
+
+    if (scroll >= topHeight) {
+    	$(".menu-section__toggle").removeClass("hide");
+    }
+    if (scroll < topHeight) {
+    	$(".menu-section__toggle").addClass("hide");
+    }
+
   });
 
-	updateContainer();
-	
-	$(window).resize(function() {
-	 	updateContainer();
-	});
+  //updates work sample scrolling depending on the screen size
+
+	updateScroll();
+
+});
+
+//attaches fixed and absolute properties to work div samples depending on the screen size
+
+$(window).resize(function() {
+	updateScroll();
 });
 
 var hasBoundScroll = false; 
@@ -94,7 +105,7 @@ var onScroll = function() {
 
 }
 
-function updateContainer() {
+function updateScroll() {
 
 	var workDistance = $('#work-label-container').offset().top,
 	yaarnDistance = $('#yaarn-container').offset().top,
