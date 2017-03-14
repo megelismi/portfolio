@@ -12,6 +12,21 @@
   <body>
     <div>
 
+      <div class="menu-section">
+        <div class="menu-section__toggle">
+          <div class="toggle1"></div>
+          <div class="toggle2"></div>
+          <div class="toggle3"></div>
+        </div>
+        <nav>
+          <ul class="navigation-list hide" role="navigation">
+            <a class="nav-link" href="#about-label-container"><li>about</li></a>
+            <a class="nav-link" href="#work-label-container"><li>work</li></a>
+            <a class="nav-link" href="#contact-label-container"><li>contact</li></a>
+          </ul>
+        </nav>
+      </div>
+
       <div id="introduction-container">
         <h2>FULL STACK DEVELOPER</h2>
         <img class="name-header" src="./public/imgs/name-header2.png" />
@@ -23,25 +38,12 @@
       </div>
 
       <div class="section-container">
+
         <div id="about-label-container" class="centered-container label-container">
           <img id="about-header" src="./public/imgs/about-header2.png" />
         </div>
 
         <div id="about-me-container" class="content-container">
-          <div class="menu-section">
-            <div class="menu-section__toggle">
-              <div class="toggle1"></div>
-              <div class="toggle2"></div>
-              <div class="toggle3"></div>
-            </div>
-            <nav>
-              <ul class="navigation-list hide" role="navigation">
-                <a class="nav-link" href="#about-label-container"><li>about</li></a>
-                <a class="nav-link" href="#work-label-container"><li>work</li></a>
-                <a class="nav-link" href="#contact-label-container"><li>contact</li></a>
-              </ul>
-            </nav>
-          </div>
     
           <img id="profile-picture" src="./public/imgs/profile-picture.jpg" />
 
@@ -55,8 +57,11 @@
         </div>
       </div>
       <div class="section-container">
-        <div id="work-label-container" class="centered-container label-container">
-          <img class="work-header" src="./public/imgs/work-header4.png" />
+
+        <div class="work-label-wrapper label-container">
+          <div id="work-label-container" class="centered-container">
+            <img class="work-header" src="./public/imgs/work-header4.png" />
+          </div>
         </div>
 
         <div id="work-samples-container" class="content-container">

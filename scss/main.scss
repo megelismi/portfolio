@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .centered-container {
 	height: 100vh; 
+	min-height: 800px;
 	flex-direction: column; 
 	display: flex; 
 	justify-content: center; 
@@ -140,6 +141,26 @@ h1, h2, h3, h4, h5, h6 {
   		}
   	}
   }
+}
+
+.fixed {
+	position: fixed; 
+	top: 0;
+	left: 0; 
+	width: 50%;
+	z-index: 1; 
+	background-color: white; 
+}
+
+.absolute {
+	position: absolute; 
+	bottom: 0; 
+	width: 100%;
+	text-align: center;
+}
+
+.right {
+	float: right; 
 }
 
 .nav-link {
@@ -252,6 +273,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 768px) {
 
+.work-label-wrapper {
+	width: 50%; 
+	position: relative;
+}
+
 	.section-container {
 		display: flex;
 	}
@@ -274,19 +300,16 @@ h1, h2, h3, h4, h5, h6 {
 		margin-left: 30px;
 	}
 
-	#work-samples-container {
-		max-height: 100vh;
-		overflow: auto;
-	}
-
 	.details {
 		margin:0; 
 		border-left :1px solid $teal;
+		border-bottom: 1px solid $teal;
 		padding-left: 15px; 
 	}
 	#contact-details {
 		padding: 35px; 
 		height:100vh; 
+		min-height: 600px;
 		position: relative;
 		p {
 			padding-right: 14px;
