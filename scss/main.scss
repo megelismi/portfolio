@@ -273,6 +273,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 768px) {
 
+.name-header {
+	width: 400px;
+	margin: 40px 15px 40px 0;
+}
+
 .work-label-wrapper {
 	width: 50%; 
 	position: relative;
@@ -290,8 +295,8 @@ h1, h2, h3, h4, h5, h6 {
 		align-items: flex-start;
 		justify-content: center;
 		p {
-			line-height: 26px;
-    	font-size: 16px;
+			line-height: 28px;
+    	font-size: 18px;
 		}
 	}
 
@@ -313,11 +318,12 @@ h1, h2, h3, h4, h5, h6 {
 		position: relative;
 		p {
 			padding-right: 14px;
+			font-size: 20px;
 		}
 	}
 
 	#name-contact {
-		font-size: 22px !important;
+		font-size: 24px !important;
 		line-height: 40px !important;
 	}
 
