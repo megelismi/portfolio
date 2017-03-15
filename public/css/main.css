@@ -424,7 +424,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     border-left: 1px solid #2ec4b6;
     border-bottom: 1px solid #2ec4b6;
-    padding-left: 15px; }
+    padding: 0 24px; }
     .details ul {
       margin-bottom: 20px; }
   #contact-details {
@@ -434,8 +434,8 @@ h1, h2, h3, h4, h5, h6 {
     position: relative; }
     #contact-details p {
       padding-right: 14px;
-      font-size: 18px;
-      line-height: 30px; }
+      font-size: 20px;
+      line-height: 32px; }
   #name-contact {
     font-size: 22px !important;
     line-height: 40px !important; }
@@ -473,9 +473,7 @@ h1, h2, h3, h4, h5, h6 {
   #work-header {
     width: 315px; }
   #contact-details p {
-    padding-right: 30px;
-    line-height: 32px;
-    font-size: 20px; }
+    padding-right: 30px; }
   #name-contact {
     font-size: 24px !important;
     line-height: 40px !important; }
