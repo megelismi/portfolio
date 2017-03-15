@@ -357,13 +357,13 @@ h1, h2, h3, h4, h5, h6 {
   height: 3px; }
 
 .toggle1.on {
-  transform: rotate(45deg) translate(7px, 7px); }
+  transform: rotate(45deg) translate(9px, 7px); }
 
 .toggle2.on {
-  display: none; }
+  opacity: 0; }
 
 .toggle3.on {
-  transform: rotate(-45deg) translate(8px, -8px); }
+  transform: rotate(-45deg) translate(8px, -7px); }
 
 @media screen and (min-width: 460px) {
   .name-header {
@@ -441,10 +441,10 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 40px !important; }
   #contact-name-email {
     position: absolute;
-    top: 20%; }
+    top: 27%; }
   #contact-links {
     position: absolute;
-    bottom: 32%;
+    bottom: 30%;
     font-size: 18px; }
   .nav-link {
     font-size: 50px;
@@ -478,7 +478,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 24px !important;
     line-height: 40px !important; }
   #contact-links {
-    bottom: 35%;
+    bottom: 30%;
     font-size: 20px; }
   .nav-link {
     font-size: 55px;
