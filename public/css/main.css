@@ -353,11 +353,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .toggle1.on, .toggle3.on {
   float: right;
-  margin: 8px 8px;
+  margin: 8px 7px;
   height: 3px; }
 
 .toggle1.on {
-  transform: rotate(45deg) translate(7px, 6px); }
+  transform: rotate(45deg) translate(7px, 7px); }
 
 .toggle2.on {
   display: none; }
