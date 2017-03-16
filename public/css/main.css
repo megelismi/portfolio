@@ -5,7 +5,8 @@
   justify-content: center;
   align-items: center;
   background-color: #011627;
-  height: 100vh; }
+  height: 100vh;
+  min-height: 800px; }
   #introduction-container a {
     color: inherit;
     text-decoration: none;
@@ -42,10 +43,10 @@
 #about-me-container {
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  #about-me-container p {
-    line-height: 26px;
-    font-size: 16px; }
+  align-items: center;
+  flex-basis: 100% p;
+    flex-basis-line-height: 26px;
+    flex-basis-font-size: 16px; }
 
 #about-me-text-container {
   margin: 0px 20px 20px 30px; }
@@ -430,7 +431,7 @@ h1, h2, h3, h4, h5, h6 {
   #contact-details {
     padding: 35px;
     height: 100vh;
-    min-height: 600px;
+    min-height: 800px;
     position: relative; }
     #contact-details p {
       padding-right: 14px;
