@@ -63,6 +63,10 @@ background-size: cover;
 	background-size: cover;
 }
 
+#localize-details-container, #edster-details-container, #kapitol-details-container, #yaarn-details-container {
+	width: 95%; 
+}
+
 .work-sample-header, .work-sample-description, .see-project-details-button {
 	color: white; 
 	margin: 0; 

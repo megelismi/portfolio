@@ -49,7 +49,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .details {
-	margin: 20px;
+	margin-left: 20px;
+  margin-bottom: 20px;
 	p {
 		font-size: 16px;
 		line-height: 26px; 
@@ -260,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .contact-header {
-  	width: 380px; 
+  	width: 340px; 
   }
 }
 
@@ -312,6 +313,13 @@ h1, h2, h3, h4, h5, h6 {
 		ul {
 			margin-bottom: 20px;
 		}
+	}
+
+	#localize-details-container, 
+	#edster-details-container, 
+	#kapitol-details-container, 
+	#yaarn-details-container  {
+		width: 100%; 
 	}
 
 	#contact-details {
