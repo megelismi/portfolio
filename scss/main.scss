@@ -315,13 +315,6 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 
-	#localize-details-container, 
-	#edster-details-container, 
-	#kapitol-details-container, 
-	#yaarn-details-container  {
-		width: 100%; 
-	}
-
 	#contact-details {
 		padding: 35px; 
 		height:100vh; 
@@ -364,6 +357,13 @@ h1, h2, h3, h4, h5, h6 {
 		margin-top: 60px; 
 	}
 
+	#localize-details-container, 
+	#edster-details-container, 
+	#kapitol-details-container, 
+	#yaarn-details-container  {
+		width: 100%; 
+	}
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -397,7 +397,6 @@ h1, h2, h3, h4, h5, h6 {
 	#work-header {
 		width: 315px; 
 	}
-
 
 	#contact-details {
 		p {
