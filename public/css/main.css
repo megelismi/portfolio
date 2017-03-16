@@ -70,7 +70,7 @@
 
 .screenshot {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 15px;
   box-shadow: 1px 1px 1px 1px #ccc;
   filter: brightness(100%);
   transition: all 2s ease; }
@@ -99,7 +99,7 @@
   background-size: cover; }
 
 #localize-details-container, #edster-details-container, #kapitol-details-container, #yaarn-details-container {
-  width: 95%; }
+  width: 90%; }
 
 .work-sample-header, .work-sample-description, .see-project-details-button {
   color: white;
