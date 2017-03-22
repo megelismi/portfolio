@@ -1,6 +1,7 @@
 $(function() {
 
-	//.find && .closest
+	//refactor to be DRY using .find && .closest
+	
 	$('#localize-more').click(function() {
 	  $('#localize-details-container').removeClass('hidden');
 	  window.location.hash = '#localize-details-container';
