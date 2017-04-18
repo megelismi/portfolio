@@ -147,6 +147,8 @@
   padding: 8px 16px;
   color: #2ec4b6;
   opacity: 0.8; }
+  .close-button img {
+    width: 25px; }
   .close-button:hover {
     opacity: 0.5; }
   .close-button:focus {

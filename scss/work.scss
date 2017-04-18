@@ -126,6 +126,9 @@ background-size: cover;
 	padding: 8px 16px;
 	color: $teal;
 	opacity: 0.8;
+	img {
+		width: 25px; 
+	}
   &:hover {
   	opacity: 0.5; 
   }
