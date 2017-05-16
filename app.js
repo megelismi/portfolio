@@ -1,70 +1,31 @@
 $(function() {
 
-	//refactor to be DRY using .find && .closest
-	
-	$('#localize-more').click(function() {
-	  $('#localize-details-container').removeClass('hidden');
-	  window.location.hash = '#localize-details-container';
-	});
-
-	$('#close-localize').click(function() {
-  	$('#localize-details-container').addClass('hidden'); 
-	});
-
-	$('#edster-more').click(function() {
-	  $('#edster-details-container').removeClass('hidden'); 
-	  window.location.hash = '#edster-details-container';
-	});
-
-	$('#close-edster').click(function() {
-	  $('#edster-details-container').addClass('hidden'); 
-	});
-
-	$('#kapitol-more').click(function() {
-	  $('#kapitol-details-container').removeClass('hidden');
-	  window.location.hash = '#kapitol-details-container'; 
-	});
-
-	$('#close-kapitol').click(function() {
-	  $('#kapitol-details-container').addClass('hidden'); 
-	});
-
-	$('#yaarn-more').click(function() {
-		console.log('this', this)
-	  $('#yaarn-details-container').removeClass('hidden');
-	  window.location.hash = '#yaarn-details-container';  
-	});
-
-	$('#close-yaarn').click(function() {
-  	$('#yaarn-details-container').addClass('hidden'); 
-	});
-
-	//changes menu section from shorten nav lines to full page nav menu 
+	//changes menu section from shorten nav lines to full page nav menu
 
 	$('.menu-section__toggle').on('click', function() {
 		$('.menu-section').toggleClass('on');
-		$('.menu-section__toggle').toggleClass('on'); 
-		$('.toggle1').toggleClass('on'); 
+		$('.menu-section__toggle').toggleClass('on');
+		$('.toggle1').toggleClass('on');
 		$('.toggle2').toggleClass('on');
 		$('.toggle3').toggleClass('on');
-		$('.navigation-list').toggleClass('hide'); 
+		$('.navigation-list').toggleClass('hide');
 	})
 
 	$('.nav-link').on('click', function() {
 		$('.menu-section').toggleClass('on');
-		$('.menu-section__toggle').toggleClass('on'); 
-		$('.toggle1').toggleClass('on'); 
+		$('.menu-section__toggle').toggleClass('on');
+		$('.toggle1').toggleClass('on');
 		$('.toggle2').toggleClass('on');
 		$('.toggle3').toggleClass('on');
-		$('.navigation-list').toggleClass('hide'); 
+		$('.navigation-list').toggleClass('hide');
 	});
 
-	//attaches floating nav to all containers except for the introduction container 
+	//attaches floating nav to all containers except for the introduction container
 
-  $(window).scroll(function() {  
+  $(window).scroll(function() {
 
-    var topHeight = $('#introduction-container').height(); 
-    var scroll = $(window).scrollTop();  
+    var topHeight = $('#introduction-container').height();
+    var scroll = $(window).scrollTop();
 
     if (scroll >= topHeight) {
     	$(".menu-section__toggle").removeClass("hide");
@@ -87,7 +48,7 @@ $(window).resize(function() {
 	updateScroll();
 });
 
-var hasBoundScroll = false; 
+var hasBoundScroll = false;
 
 var onScroll = function() {
 
@@ -115,12 +76,20 @@ function updateScroll() {
   var $width = $(window).width();
 
   if ($width >= 768 && !hasBoundScroll) {
-		$window.on('scroll', onScroll); 
+		$window.on('scroll', onScroll);
 		hasBoundScroll = true;
   } else if (hasBoundScroll && $width < 768) {
   		$window.off('scroll', onScroll);
   		$("#work-label-container").removeClass("absolute fixed");
   		hasBoundScroll = false;
   }
-
 }
+
+function openProjectDetails(container) {
+    $(container).removeClass('hidden');
+    window.location.hash = container;
+  }
+
+  function closeProjectDetails(container) {
+    $(container).addClass('hidden');
+  }
