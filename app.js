@@ -1,25 +1,5 @@
 $(function() {
 
-	//changes menu section from shorten nav lines to full page nav menu
-
-	$('.menu-section__toggle').on('click', function() {
-		$('.menu-section').toggleClass('on');
-		$('.menu-section__toggle').toggleClass('on');
-		$('.toggle1').toggleClass('on');
-		$('.toggle2').toggleClass('on');
-		$('.toggle3').toggleClass('on');
-		$('.navigation-list').toggleClass('hide');
-	})
-
-	$('.nav-link').on('click', function() {
-		$('.menu-section').toggleClass('on');
-		$('.menu-section__toggle').toggleClass('on');
-		$('.toggle1').toggleClass('on');
-		$('.toggle2').toggleClass('on');
-		$('.toggle3').toggleClass('on');
-		$('.navigation-list').toggleClass('hide');
-	});
-
 	//attaches floating nav to all containers except for the introduction container
 
   $(window).scroll(function() {
@@ -85,11 +65,23 @@ function updateScroll() {
   }
 }
 
-function openProjectDetails(container) {
-    $(container).removeClass('hidden');
-    window.location.hash = container;
-  }
+//changes menu section from shorten nav lines to full page nav menu
 
-  function closeProjectDetails(container) {
-    $(container).addClass('hidden');
-  }
+function toggleNavMenu() {
+  $('.menu-section').toggleClass('on');
+  $('.menu-section__toggle').toggleClass('on');
+  $('.toggle1').toggleClass('on').toggleClass('hide');
+  $('.toggle2').toggleClass('on').toggleClass('hide');
+  $('.toggle3').toggleClass('on').toggleClass('hide');
+  $('.navigation-list').toggleClass('hide');
+  $('.cancel-nav').toggleClass('hide');
+}
+
+function openProjectDetails(container) {
+  $(container).removeClass('hidden');
+  window.location.hash = container;
+}
+
+function closeProjectDetails(container) {
+  $(container).addClass('hidden');
+}

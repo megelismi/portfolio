@@ -12,23 +12,24 @@
     <div>
 
       <div class="menu-section">
-        <div class="menu-section__toggle">
+        <div onClick="toggleNavMenu()" class="menu-section__toggle">
           <div class="toggle1"></div>
           <div class="toggle2"></div>
           <div class="toggle3"></div>
         </div>
+        <img onClick="toggleNavMenu()" class="cancel-nav hide" src="public/imgs/cancel.png" />
         <nav>
           <ul class="navigation-list hide" role="navigation">
-            <a class="nav-link" href="#about-label-container"><li>about</li></a>
-            <a class="nav-link" href="#work-label-container"><li>work</li></a>
-            <a class="nav-link" href="#contact-label-container"><li>contact</li></a>
+            <a onClick="toggleNavMenu()" class="nav-link" href="#about-label-container"><li>about</li></a>
+            <a onClick="toggleNavMenu()" class="nav-link" href="#work-label-container"><li>work</li></a>
+            <a onClick="toggleNavMenu()" class="nav-link" href="#contact-label-container"><li>contact</li></a>
           </ul>
         </nav>
       </div>
 
       <div id="introduction-container">
         <h2>FULL STACK DEVELOPER</h2>
-        <img class="name-header" src="./public/imgs/name-header2.png" />
+        <h1>Megan Smith</h1>
         <ul role="navigation">
           <a href="#about-label-container"><li>about</li></a> &nbsp;/&nbsp;
           <a href="#work-label-container"><li>work</li></a> &nbsp;/&nbsp;
@@ -39,7 +40,7 @@
       <div class="section-container">
 
         <div id="about-label-container" class="centered-container label-container">
-          <img id="about-header" src="./public/imgs/about-header2.png" />
+          <h2>about</h2>
         </div>
 
         <div id="about-me-container" class="content-container">
@@ -59,7 +60,7 @@
 
         <div class="work-label-wrapper label-container">
           <div id="work-label-container" class="centered-container">
-            <img id="work-header" src="./public/imgs/work-header4.png" />
+            <h2>work</h2>
           </div>
         </div>
 
@@ -208,13 +209,13 @@
 
       <div class="section-container">
         <div id="contact-label-container" class="centered-container label-container">
-          <img class="contact-header" src="./public/imgs/contact-header.png" />
+          <h2>contact</h2>
         </div>
 
         <div id="contact-details" class="content-container">
           <div id="contact-name-email">
             <p>If you’d like to know more or discuss any opportunities, please don’t hesitate to reach out.</p>
-            <p id="name-contact" class="bold">Megan Smith</p>
+            <p id="name-contact">Megan Smith</p>
             <p>Full Stack Developer</br>
             meg.eli.smi@gmail.com</p>
           </div>

@@ -1,22 +1,32 @@
+$cursive: 'VayenthaScript';
+$teal: #2ec4b6;
+
 #work-header {
-	margin-right: 10px; 
-	width: 240px; 
+	margin-right: 10px;
+	width: 240px;
+}
+
+#work-label-container {
+  h2 {
+    font-family: $cursive;
+    color: $teal;
+  }
 }
 
 .screenshot {
 	width: 100%;
-	margin-top: 15px; 
-	box-shadow: 1px 1px 1px 1px #ccc; 	
-	filter: brightness(100%); 
-	transition: all 2s ease;	
+	margin-top: 15px;
+	box-shadow: 1px 1px 1px 1px #ccc;
+	filter: brightness(100%);
+	transition: all 2s ease;
 	&:hover {
 		filter: brightness(80%);
 		transition: all 2s ease;
-	} 
+	}
 }
 
 #localize-container {
-	height: 100vh; 
+	height: 100vh;
 	background:
 	linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -28,7 +38,7 @@ background-size: cover;
 }
 
 #edster-container {
-	height: 100vh; 
+	height: 100vh;
 	background:
 	linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -40,7 +50,7 @@ background-size: cover;
 }
 
 #kapitol-container {
-	height: 100vh; 
+	height: 100vh;
 	background:
 	linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -52,7 +62,7 @@ background-size: cover;
 }
 
 #yaarn-container {
-	height: 100vh; 
+	height: 100vh;
 	background:
 	linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -64,12 +74,12 @@ background-size: cover;
 }
 
 #localize-details-container, #edster-details-container, #kapitol-details-container, #yaarn-details-container {
-	width: 90%; 
+	width: 90%;
 }
 
 .work-sample-header, .work-sample-description, .see-project-details-button {
-	color: white; 
-	margin: 0; 
+	color: white;
+	margin: 0;
 }
 
 .work-sample-description {
@@ -81,41 +91,41 @@ background-size: cover;
 }
 
 .work-label-wrapper {
-	width: 100%; 
+	width: 100%;
 }
 
 .see-project-details-button {
 	border: 3px solid $teal;
 	background-color: transparent;
-	padding: 14px 8px; 
+	padding: 14px 8px;
   font-size: 14px;
- 	margin: 8px 0; 
+ 	margin: 8px 0;
 	&:hover {
 		opacity: 0.7;
 	}
 	&:focus {
-		outline: none; 
+		outline: none;
 	}
 }
 
 .project-details {
-	margin: 20px; 
+	margin: 20px;
 	p, span {
 		font-size: 16px;
-    line-height: 26px; 
+    line-height: 26px;
 	}
 
 	a {
 		color: $navy;
-		font-size: 14px; 
+		font-size: 14px;
 		&:hover {
-			opacity: 0.7; 
+			opacity: 0.7;
 		}
 	}
 }
 
 .hidden {
-	display: none; 
+	display: none;
 }
 
 .close-button {
@@ -127,19 +137,19 @@ background-size: cover;
 	color: $teal;
 	opacity: 0.8;
 	img {
-		width: 25px; 
+		width: 25px;
 	}
   &:hover {
-  	opacity: 0.5; 
+  	opacity: 0.5;
   }
   &:focus {
-  	outline: 0; 
+  	outline: 0;
   }
 }
 
 .close-button-container {
-	width:10%; 
-	float:right;  
+	width:10%;
+	float:right;
 }
 
 #edster-algo {
@@ -147,7 +157,7 @@ background-size: cover;
 }
 
 .icon {
-	width: 45px; 
+	width: 45px;
 }
 
 .node {
@@ -159,12 +169,12 @@ background-size: cover;
 }
 
 .mongo {
-	width: 25px; 
+	width: 25px;
 }
 
 .jump-to-code {
 	font-size: 14px !important;
-	margin: 0; 
+	margin: 0;
 }
 
 .hover-text {
@@ -173,11 +183,11 @@ background-size: cover;
   position: absolute;
   color: $navy;
   font-weight: bold;
-  text-align: center; 
-  width: 45px; 
+  text-align: center;
+  width: 45px;
   -webkit-animation: fadein 2s;
-  -moz-animation: fadein 2s; 
-  -ms-animation: fadein 2s; 
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
   -o-animation: fadein 2s;
   animation: fadein 2s;
 }
@@ -187,13 +197,13 @@ background-size: cover;
   to   { opacity: 1; }
 }
 
-.react-icon:hover + .hover-text, 
-.node-icon:hover + .hover-text, 
-.passport-icon:hover + .hover-text, 
-.postgresql-icon:hover + .hover-text, 
-.oauth-icon:hover + .hover-text, 
+.react-icon:hover + .hover-text,
+.node-icon:hover + .hover-text,
+.passport-icon:hover + .hover-text,
+.postgresql-icon:hover + .hover-text,
+.oauth-icon:hover + .hover-text,
 .mongodb-icon:hover + .hover-text {
-  display: block; 
+  display: block;
 }
 
 

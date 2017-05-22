@@ -1,44 +1,44 @@
 $navy: #011627;
-$teal: #2ec4b6; 
-$off-white: #fffffa; 
+$teal: #2ec4b6;
+$off-white: #fffffa;
+$cursive: 'VayenthaScript';
 
 #about-label-container {
-	background-color: $teal; 
+	background-color: $teal;
 }
 
 #about-header {
-	width: 260px; 
+	width: 260px;
 }
 
 #about-me-container {
-	display: flex; 
-	flex-direction: column; 
-	align-items: center; 
-	// flex-basis: 1; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	p {
 		line-height: 26px;
-    font-size: 16px; 
+    font-size: 16px;
 	}
 }
 
 #about-me-text-container {
-	margin: 0px 20px 20px 30px; 
+	margin: 0px 20px 20px 30px;
 	max-width: 80%;
 	a {
 		color: $navy;
 		&:hover {
-			color: $teal;  
+			color: $teal;
 		}
 	}
 }
 
 #about-me-intro {
-	font-size: 24px !important; 
+	font-size: 24px !important;
 }
 
 #profile-picture {
 	width: 150px;
 	margin: 30px 0 10px 0;
-	border-radius: 2px;  
+	border-radius: 2px;
 }
 

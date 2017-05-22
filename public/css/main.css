@@ -14,17 +14,19 @@
     #introduction-container a:hover {
       border-bottom: 3px solid #fffffa; }
   #introduction-container h1 {
-    font-family: "amethystregular";
-    color: #fffffa; }
+    font-family: "VayenthaScript";
+    color: #fffffa;
+    margin: 30px 0;
+    font-size: 7em; }
   #introduction-container h2, #introduction-container ul {
     color: #2ec4b6;
-    font-family: 'Libre Franklin 100', sans-serif;
+    font-family: "VayenthaSans";
     margin: 0;
-    font-size: 20px; }
+    font-size: 3em; }
   #introduction-container ul {
     list-style: none;
     padding-left: 0;
-    padding-top: 14px; }
+    padding-top: 50px; }
     #introduction-container ul li {
       display: inline-block;
       text-align: center;
@@ -67,6 +69,10 @@
 #work-header {
   margin-right: 10px;
   width: 240px; }
+
+#work-label-container h2 {
+  font-family: "VayenthaScript";
+  color: #2ec4b6; }
 
 .screenshot {
   width: 100%;
@@ -207,10 +213,12 @@
 
 #contact-label-container {
   background-color: #011627; }
+  #contact-label-container h2 {
+    color: #fffffa; }
 
 #contact-details {
   height: 60vh;
-  padding: 15px; }
+  padding: 16px; }
   #contact-details a {
     color: inherit; }
   #contact-details p {
@@ -221,8 +229,10 @@
   width: 285px; }
 
 #name-contact {
-  font-size: 20px;
-  color: #2ec4b6; }
+  font-size: 4.5em !important;
+  margin: 30px 0 !important;
+  color: #2ec4b6;
+  font-family: "VayenthaScript"; }
 
 @-ms-viewport {
   width: device-width; }
@@ -232,6 +242,16 @@
   src: url("../fonts/amethyst-webfont.woff2") format("woff2"), url("../fonts/amethyst-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+@font-face {
+  font-family: 'VayenthaScript';
+  src: url("../fonts/VayenthaScript.eot");
+  src: url("../fonts/VayenthaScript.eot") format("embedded-opentype"), url("../fonts/VayenthaScript.woff2") format("woff2"), url("../fonts/VayenthaScript.woff") format("woff"), url("../fonts/VayenthaScript.ttf") format("truetype"), url("../fonts/VayenthaScript.svg#VayenthaScript") format("svg"); }
+
+@font-face {
+  font-family: 'VayenthaSans';
+  src: url("../fonts/VayenthaSans.eot");
+  src: url("../fonts/VayenthaSans.eot") format("embedded-opentype"), url("../fonts/VayenthaSans.woff2") format("woff2"), url("../fonts/VayenthaSans.woff") format("woff"), url("../fonts/VayenthaSans.ttf") format("truetype"), url("../fonts/VayenthaSans.svg#VayenthaSans") format("svg"); }
 
 * {
   box-sizing: border-box; }
@@ -243,6 +263,23 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
+
+.cancel-nav {
+  width: 28px;
+  position: absolute;
+  right: 36px;
+  top: 30px; }
+
+#work-label-container h2, #about-label-container h2, #contact-label-container h2 {
+  font-family: "VayenthaScript";
+  font-size: 11em;
+  margin: 0; }
+
+.nav-link {
+  text-decoration: none;
+  color: #fffffa;
+  font-size: 5em;
+  font-family: "VayenthaScript"; }
 
 .centered-container {
   height: 100vh;
@@ -293,7 +330,8 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 .hide {
   display: none; }
@@ -346,44 +384,29 @@ h1, h2, h3, h4, h5, h6 {
 .right {
   float: right; }
 
-.nav-link {
-  text-decoration: none;
-  color: #fffffa;
-  font-size: 40px;
-  line-height: 80px;
-  font-family: "amethystregular"; }
-
 .toggle1, .toggle2, .toggle3 {
   width: 100%;
   background: lightgray;
   margin: 8px auto;
   height: 2px; }
 
-.toggle1.on, .toggle3.on {
-  float: right;
-  margin: 8px 7px;
-  height: 3px; }
-
-.toggle1.on {
-  transform: rotate(45deg) translate(9px, 7px); }
-
-.toggle2.on {
-  opacity: 0; }
-
-.toggle3.on {
-  transform: rotate(-45deg) translate(8px, -5px); }
-
 @media screen and (min-width: 460px) {
   .name-header {
     width: 320px; }
+  #work-label-container h2, #about-label-container h2, #contact-label-container h2 {
+    font-size: 13em; }
+  #introduction-container h1 {
+    font-size: 13em; }
   #introduction-container h2, #introduction-container ul {
-    font-size: 26px; }
+    font-size: 3em; }
   #about-header {
     width: 320px; }
   #profile-picture {
     width: 160px; }
   #about-me-text-container p {
     font-size: 18px; }
+  .nav-link {
+    font-size: 8em; }
   #work-header {
     width: 290px; }
   .work-sample-header {
@@ -410,9 +433,15 @@ h1, h2, h3, h4, h5, h6 {
     width: 80%; } }
 
 @media screen and (min-width: 768px) {
+  #introduction-container h1 {
+    font-size: 15em; }
+  #introduction-container h2, #introduction-container ul {
+    font-size: 5em; }
   .name-header {
     width: 380px;
     margin: 40px 15px 40px 0; }
+  #name-contact {
+    font-size: 5em !important; }
   .work-label-wrapper {
     width: 50%;
     position: relative; }
@@ -444,9 +473,6 @@ h1, h2, h3, h4, h5, h6 {
       padding-right: 14px;
       font-size: 20px;
       line-height: 32px; }
-  #name-contact {
-    font-size: 22px !important;
-    line-height: 40px !important; }
   #contact-name-email {
     position: absolute;
     top: 27%; }
@@ -454,9 +480,6 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     bottom: 30%;
     font-size: 18px; }
-  .nav-link {
-    font-size: 50px;
-    line-height: 105px; }
   .close-button-container {
     margin-right: 10px;
     margin-top: 5px; }
@@ -469,6 +492,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%; } }
 
 @media screen and (min-width: 1200px) {
+  #introduction-container h1 {
+    font-size: 20em; }
   .name-header {
     width: 420px;
     margin: 50px 15px 50px 0; }
@@ -487,14 +512,25 @@ h1, h2, h3, h4, h5, h6 {
     width: 315px; }
   #contact-details p {
     padding-right: 30px; }
-  #name-contact {
-    font-size: 24px !important;
-    line-height: 40px !important; }
   #contact-links {
     bottom: 30%;
     font-size: 20px; }
-  .nav-link {
-    font-size: 55px;
-    line-height: 110px; }
   .contact-header {
     width: 450px; } }
+
+@media screen and (min-width: 1440px) {
+  #introduction-container h1 {
+    font-size: 25em;
+    margin-bottom: 50px; }
+  #introduction-container h2, #introduction-container ul {
+    font-size: 6em; }
+  #work-label-container h2, #about-label-container h2, #contact-label-container h2 {
+    font-family: "VayenthaScript";
+    font-size: 18em;
+    margin: 0; }
+  #about-me-text-container p {
+    font-size: 20px; }
+  #contact-details p {
+    font-size: 22px; }
+  #profile-picture {
+    font-size: 200px; } }

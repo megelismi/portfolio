@@ -1,7 +1,7 @@
-@import "introduction"; 
-@import "about"; 
-@import "work"; 
-@import "contact"; 
+@import "introduction";
+@import "about";
+@import "work";
+@import "contact";
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,700,700i|Martel+Sans:200,300,400|News+Cycle:400,700');
 
 @-ms-viewport {
@@ -16,36 +16,80 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'VayenthaScript';
+    src: url('../fonts/VayenthaScript.eot');
+    src: url('../fonts/VayenthaScript.eot') format('embedded-opentype'),
+         url('../fonts/VayenthaScript.woff2') format('woff2'),
+         url('../fonts/VayenthaScript.woff') format('woff'),
+         url('../fonts/VayenthaScript.ttf') format('truetype'),
+         url('../fonts/VayenthaScript.svg#VayenthaScript') format('svg');
+}
+
+@font-face {
+    font-family: 'VayenthaSans';
+    src: url('../fonts/VayenthaSans.eot');
+    src: url('../fonts/VayenthaSans.eot') format('embedded-opentype'),
+         url('../fonts/VayenthaSans.woff2') format('woff2'),
+         url('../fonts/VayenthaSans.woff') format('woff'),
+         url('../fonts/VayenthaSans.ttf') format('truetype'),
+         url('../fonts/VayenthaSans.svg#VayenthaSans') format('svg');
+}
+
 $navy: #011627;
-$teal: #2ec4b6; 
-$off-white: #fffffa; 
+$teal: #2ec4b6;
+$off-white: #fffffa;
 $accent-font: 'amethystregular';
+$cursive: 'VayenthaScript';
+$fancysans: 'VayenthaSans';
 
 * {
 	box-sizing: border-box;
 }
 
-body { 
-  margin: 0; 
+body {
+  margin: 0;
   font-family: 'Libre Franklin 100', sans-serif;
   color: $navy;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: normal; 
+	font-weight: normal;
+}
+
+.cancel-nav {
+  width: 28px;
+  position: absolute;
+  right: 36px;
+  top: 30px;
+}
+
+#work-label-container, #about-label-container,  #contact-label-container {
+  h2 {
+    font-family: $cursive;
+    font-size: 11em;
+    margin: 0;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  color: $off-white;
+  font-size: 5em;
+  font-family: $cursive;
 }
 
 .centered-container {
-	height: 100vh; 
+	height: 100vh;
 	min-height: 800px;
-	flex-direction: column; 
-	display: flex; 
-	justify-content: center; 
-	align-items: center; 
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .bold {
-	font-weight: bold; 
+	font-weight: bold;
 }
 
 .details {
@@ -53,34 +97,34 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 	p {
 		font-size: 16px;
-		line-height: 26px; 
+		line-height: 26px;
 	}
 	ul {
 		list-style: none;
-		padding-left:0; 
-		margin: 0; 
+		padding-left:0;
+		margin: 0;
 		li {
 			display: inline-block;
 			&:not(:first-child) {
 				padding: 15px;
-			} 
+			}
 			&:first-child {
-				padding: 10px 10px 10px 0; 
+				padding: 10px 10px 10px 0;
 			}
 		}
 	}
 	a {
 		color: $navy;
-		font-size: 16px; 
+		font-size: 16px;
 		&:hover {
-			color: $teal; 
+			color: $teal;
 		}
 	}
 }
 
 .fa {
 	padding-right: 15px;
-	padding-top: 10px; 
+	padding-top: 10px;
 	color: $teal;
 	&:hover {
 		opacity: 0.7;
@@ -88,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-github {
-	color: $navy !important; 
+	color: $navy !important;
 	padding-right: 8px !important;
 }
 
@@ -98,10 +142,11 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition-duration: 0.5s;
 	transition-duration: 0.5s;
   width: 100%;
+  position: relative;
 }
 
 .hide {
-	display: none; 
+	display: none;
 }
 
 .menu-section__toggle {
@@ -115,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu-section__toggle.on {
-  left: auto; 
+  left: auto;
   right: 25px;
 }
 
@@ -129,15 +174,15 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   bottom: 0;
   display: flex;
-  align-items: center; 
-  justify-content: center; 
-  nav { 
+  align-items: center;
+  justify-content: center;
+  nav {
   	ul {
   		list-style: none;
-  		padding-left: 0; 
+  		padding-left: 0;
   		li {
   			&:hover {
-  				color: $teal; 
+  				color: $teal;
   			}
   		}
   	}
@@ -145,67 +190,54 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fixed {
-	position: fixed; 
+	position: fixed;
 	top: 0;
-	left: 0; 
+	left: 0;
 	width: 50%;
-	z-index: 1; 
-	background-color: white; 
+	z-index: 1;
+	background-color: white;
 }
 
 .absolute {
-	position: absolute; 
-	bottom: 0; 
+	position: absolute;
+	bottom: 0;
 	width: 100%;
 	text-align: center;
 }
 
 .right {
-	float: right; 
-}
-
-.nav-link {
-	text-decoration: none; 
-	color: $off-white; 
-	font-size: 40px;
-	line-height: 80px;
-	font-family: $accent-font;
+	float: right;
 }
 
 .toggle1, .toggle2, .toggle3 {
-	width: 100%; 
-	background: lightgray; 
-	margin: 8px auto; 
-	height: 2px; 
+	width: 100%;
+	background: lightgray;
+	margin: 8px auto;
+	height: 2px;
 }
 
-.toggle1.on, .toggle3.on {
-	float: right;
-	margin: 8px 7px; 
-	height: 3px; 
-}
-
-.toggle1.on {
-	transform: rotate(45deg) translate(9px, 7px);
-}
-
-.toggle2.on {
-	opacity: 0; 
-}
-
-.toggle3.on {
-	transform: rotate(-45deg) translate(8px, -5px); 
-}
-
+// .toggle1.on, .toggle2.on, .toggle3.on {
+//   display: none;
+// }
 
 @media screen and (min-width: 460px) {
   .name-header {
-  	width: 320px;  
+  	width: 320px;
+  }
+
+  #work-label-container, #about-label-container,  #contact-label-container {
+    h2 {
+      font-size: 13em;
+    }
   }
 
   #introduction-container {
+    h1 {
+      font-size: 13em;
+    }
+
   	h2, ul {
-  		font-size: 26px; 
+  		font-size: 3em;
   	}
   }
 
@@ -214,34 +246,38 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   #profile-picture {
-  	width: 160px; 
+  	width: 160px;
   }
 
   #about-me-text-container {
   	p {
-  		font-size: 18px; 
+  		font-size: 18px;
   	}
   }
 
+  .nav-link {
+    font-size: 8em;
+  }
+
   #work-header {
-  	width: 290px; 
+  	width: 290px;
   }
 
   .work-sample-header {
-  	font-size: 48px; 
+  	font-size: 48px;
   }
 
   .work-sample-description {
-  	font-size: 22px; 
+  	font-size: 22px;
   }
 
   .see-project-details-button {
-  	font-size: 16px; 
+  	font-size: 16px;
   }
 
   .details {
   	p, a {
-  		font-size: 18px; 
+  		font-size: 18px;
   	}
   }
 
@@ -250,37 +286,51 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .project-github {
-  	font-size: 24px; 
+  	font-size: 24px;
   }
 
   .node {
   	width: 50px !important;
   }
   .icon {
-  	width: 60px; 
+  	width: 60px;
   }
 
   .contact-header {
-  	width: 340px; 
+  	width: 340px;
   }
 }
 
 @media screen and (min-width: 600px) {
 
 	.screenshot, #edster-algo {
-		width: 80%; 
+		width: 80%;
 	}
 }
 
 @media screen and (min-width: 768px) {
+
+    #introduction-container {
+    h1 {
+      font-size: 15em;
+    }
+
+    h2, ul {
+      font-size: 5em;
+    }
+  }
 
 	.name-header {
 		width: 380px;
 		margin: 40px 15px 40px 0;
 	}
 
+  #name-contact {
+    font-size: 5em !important;
+  }
+
 	.work-label-wrapper {
-		width: 50%; 
+		width: 50%;
 		position: relative;
 	}
 
@@ -306,7 +356,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	.details {
-		margin:0; 
+		margin:0;
 		border-left :1px solid $teal;
 		border-bottom: 1px solid $teal;
 		padding: 0 24px;
@@ -316,8 +366,8 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	#contact-details {
-		padding: 35px; 
-		height:100vh; 
+		padding: 35px;
+		height:100vh;
 		min-height: 800px;
 		position: relative;
 		p {
@@ -327,14 +377,9 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 
-	#name-contact {
-		font-size: 22px !important;
-		line-height: 40px !important;
-	}
-
 	#contact-name-email {
-		position: absolute; 
-		top: 27%; 
+		position: absolute;
+		top: 27%;
 	}
 
 	#contact-links {
@@ -343,30 +388,31 @@ h1, h2, h3, h4, h5, h6 {
 		font-size:18px;
 	}
 
-	.nav-link {
-		font-size: 50px; 
-		line-height: 105px; 
-	}
-
 	.close-button-container {
 		margin-right: 10px;
     margin-top: 5px;
 	}
-	
+
 	.screenshot {
-		margin-top: 60px; 
+		margin-top: 60px;
 	}
 
-	#localize-details-container, 
-	#edster-details-container, 
-	#kapitol-details-container, 
+	#localize-details-container,
+	#edster-details-container,
+	#kapitol-details-container,
 	#yaarn-details-container  {
-		width: 100%; 
+		width: 100%;
 	}
 
 }
 
 @media screen and (min-width: 1200px) {
+
+  #introduction-container {
+    h1 {
+      font-size: 20em;
+    }
+  }
 
 	.name-header {
 		width: 420px;
@@ -374,11 +420,11 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	#about-header {
-		width: 360px; 
+		width: 360px;
 	}
 
 	#about-me-text-container {
-		margin: 0 60px 20px 60px; 
+		margin: 0 60px 20px 60px;
 	}
 
 	#about-me-container {
@@ -390,12 +436,12 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	#profile-picture {
-		width: 175px; 
+		width: 175px;
 		margin: 0 0 10px 60px;
 	}
 
 	#work-header {
-		width: 315px; 
+		width: 315px;
 	}
 
 	#contact-details {
@@ -404,23 +450,53 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 
-	#name-contact {
-		font-size: 24px !important;
-		line-height: 40px !important;
-	}
-
 	#contact-links {
 		bottom: 30%;
     font-size: 20px;
 	}
 
-	.nav-link {
-		font-size: 55px; 
-		line-height: 110px; 
-	}
-
 	.contact-header {
-		width: 450px; 
+		width: 450px;
 	}
 
 }
+
+@media screen and (min-width: 1440px) {
+
+  #introduction-container {
+    h1 {
+      font-size: 25em;
+      margin-bottom: 50px;
+    }
+
+    h2, ul {
+      font-size: 6em;
+    }
+  }
+
+  #work-label-container, #about-label-container,  #contact-label-container {
+    h2 {
+      font-family: $cursive;
+      font-size: 18em;
+      margin: 0;
+    }
+  }
+
+  #about-me-text-container {
+    p {
+      font-size: 20px;
+    }
+  }
+
+  #contact-details  {
+    p {
+      font-size: 22px;
+    }
+  }
+
+  #profile-picture {
+    font-size: 200px;
+  }
+
+}
+
