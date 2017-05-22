@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cancel-nav {
-  width: 28px;
+  width: 20px;
   position: absolute;
   right: 36px;
   top: 30px;
@@ -307,9 +307,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 768px) {
 
-    #introduction-container {
+  .cancel-nav {
+    width: 28px;
+  }
+
+  #introduction-container {
     h1 {
       font-size: 15em;
+      margin: 0;
     }
 
     h2, ul {
