@@ -5,11 +5,11 @@ $cursive: 'VayenthaScript';
 
 #about-label-container {
 	background-color: $teal;
+	h2 {
+		color: $off-white;
+	}
 }
 
-#about-header {
-	width: 260px;
-}
 
 #about-me-container {
 	display: flex;
