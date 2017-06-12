@@ -32,7 +32,7 @@ var hasBoundScroll = false;
 
 var onScroll = function() {
 
-	yaarnDistance = $('#yaarn-container').offset().top,
+	trakkerDistance = $('#trakker-container').offset().top,
 	localizeDistance = $('#localize-container').offset().top;
 
 	if ( $(window).scrollTop() >= localizeDistance ) {
@@ -41,7 +41,7 @@ var onScroll = function() {
     $("#work-label-container").removeClass("fixed");
   }
 
-  if ($(window).scrollTop() >= yaarnDistance) {
+  if ($(window).scrollTop() >= trakkerDistance) {
     $("#work-label-container").addClass("absolute").removeClass("fixed");
   }
 
@@ -50,7 +50,7 @@ var onScroll = function() {
 function updateScroll() {
 
 	var workDistance = $('#work-label-container').offset().top,
-	yaarnDistance = $('#yaarn-container').offset().top,
+	trakkerDistance = $('#trakker-container').offset().top,
 	localizeDistance = $('#localize-container').offset().top,
 	$window = $(window);
   var $width = $(window).width();
