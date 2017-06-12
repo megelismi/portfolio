@@ -12,29 +12,26 @@
     text-decoration: none;
     padding-bottom: 6px; }
     #introduction-container a:hover {
-      border-bottom: 3px solid #fffffa; }
+      border-bottom: 3px solid #48A8CE; }
   #introduction-container h1 {
     font-family: "VayenthaScript";
     color: #fffffa;
     margin: 30px 0;
     font-size: 7em; }
-  #introduction-container h2, #introduction-container ul {
-    color: #011627;
+  #introduction-container h2 {
+    color: #48A8CE;
     font-family: "VayenthaSans";
     margin: 0;
     font-size: 3em; }
   #introduction-container ul {
     list-style: none;
     padding-left: 0;
-    padding-top: 50px; }
+    font-family: "VayenthaScript";
+    color: #48A8CE;
+    margin: 40px 0; }
     #introduction-container ul li {
       display: inline-block;
-      text-align: center;
-      line-height: 28px; }
-
-.name-header {
-  width: 270px;
-  margin: 30px 15px 30px 0; }
+      text-align: center; }
 
 #about-label-container {
   background-color: #2ec4b6; }
@@ -270,7 +267,8 @@ h1, h2, h3, h4, h5, h6 {
   top: 30px; }
 
 .n-header {
-  width: 600px; }
+  width: 600px;
+  margin-top: 30px; }
 
 #work-label-container h2, #about-label-container h2, #contact-label-container h2 {
   font-family: "VayenthaScript";

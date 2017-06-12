@@ -18,7 +18,7 @@ $fancysans: 'VayenthaSans';
 		text-decoration: none;
 		padding-bottom: 6px;
 		&:hover {
-			border-bottom: 3px solid $off-white;
+			border-bottom: 3px solid #48A8CE;
 		}
 	}
 	h1 {
@@ -27,8 +27,8 @@ $fancysans: 'VayenthaSans';
 		margin: 30px 0;
 		font-size: 7em;
 	}
-	h2, ul {
-		color: $navy;
+	h2 {
+		color: #48A8CE;
 		font-family: $fancysans;
 		margin: 0;
 		font-size: 3em;
@@ -37,17 +37,13 @@ $fancysans: 'VayenthaSans';
 	ul {
 		list-style: none;
 		padding-left: 0;
-		padding-top: 50px;
+		font-family: $cursive;
+		color: #48A8CE;
+		margin: 40px 0;
 		li {
 			display: inline-block;
 			text-align: center;
-			line-height: 28px;
 		}
 	}
-}
-
-.name-header {
-	width: 270px;
-	margin: 30px 15px 30px 0;
 }
 
