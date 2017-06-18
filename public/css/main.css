@@ -109,13 +109,14 @@
 
 .work-sample-header, .work-sample-description, .see-project-details-button {
   color: white;
-  margin: 0; }
+  margin: 0;
+  font-weight: 300; }
 
 .work-sample-description {
   font-size: 18px; }
 
 .work-sample-header {
-  font-size: 36px; }
+  font-size: 28px; }
 
 .work-label-wrapper {
   width: 100%; }
